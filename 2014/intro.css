@@ -1,0 +1,166 @@
+@font-face
+{
+	font-family: BebasNeue;
+	src: url(BebasNeue.otf), url(BebasNeue.ttf);
+}
+@font-face
+{
+	font-family: PTSerif;
+	src: url(pt_serif.ttf), url(pt_serif.otf);
+}
+@-webkit-keyframes hover{
+	0%{
+		margin-top: 0em;
+	}
+	50%{
+		margin-top: 1em;
+	}
+	100%{
+		margin-top: 0em;
+	}
+}
+@media (min-width:801px){
+section p#explain{
+	width: 28%;
+	color: #000;
+	font-family: PTSerif, Georgia, "Times New Roman", Times, serif;
+	font-size: 1.3em;
+	text-indent: 3em;
+	position: absolute;
+	top: 4%;
+	left: 4%;
+	max-height: 92%;
+	overflow-y: scroll;
+}
+img#windows{
+	width: auto;
+	max-width: 60%;
+	height: 44%;
+	position: absolute;
+	left: 36%;
+	top: 4%;
+	display: block;
+	border: 1px #000 solid;
+}
+img#mac{
+	width: auto;
+	max-width: 60%;
+	height: 44%;
+	position: absolute;
+	left: 36%;
+	bottom: 4%;
+	display: block;
+	border: 1px #000 solid;
+	border-radius: 5px;
+}
+section img#helper{
+	position: absolute;
+	display: block;
+	left: 55%;
+	top: 10%;
+	max-width: 40%;
+	border: 1px #000 solid;
+	border-radius: 5px;
+}
+img#logo{
+	display: block;
+	margin: auto;
+	margin-top: 2%;
+}
+p#main{
+	font-size: 1.2em;
+	padding-top: 0%;
+	margin-top: 5%;
+	width: 90%;
+	margin-left: 5%;
+	text-indent: 3em;
+	font-family: PTSerif, Georgia, "Times New Roman", Times, serif;
+	max-height: 30%;
+	overflow-y: scroll;
+}
+#overlay{
+	height: 100%;
+	width: auto;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	z-index: -1;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -1%;
+	opacity: .1;
+}
+span#scroll{
+	font-size: 1.5em;
+	color: #333;
+	display: block;
+	text-align: center;
+	font-family: BebasNeue;
+}
+img#down{
+	display: block;
+	width: auto;
+	height: 10%;
+	bottom: 5%;
+	margin: auto;
+	-webkit-animation: hover;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+}
+h1{
+	font-size: 10em;
+	 color: rgba(48,48,48, 0.8);
+    text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+	font-family: BebasNeue;
+}
+div#code{
+	border-top: #0F0 2px solid;
+	border-bottom: #0F0 2px solid;
+	background-color: #000;
+	color: #0F0;
+	padding: 2%;
+	position: absolute;
+	display: block;
+	left: 36%;
+	top: 10%;
+	width: 40%;
+	font-family: "Courier New", Courier, monospace;
+}
+}
+@media (max-device-width:800px),(max-width:800px){
+img#logo{
+	width: 50%;
+	margin-left: 25%;
+}
+img#mac, img#windows, img#down, img#overlay, span#scroll{
+	display: none;
+}
+section{
+	display: block;
+}
+p#explain{
+	width: 90%;
+	position: static;
+	font-size: 1.2em;
+	padding: 5%;
+	font-family: PTSerif, Georgia, "Times New Roman", Times, serif;
+	text-indent: 5em;
+}
+p#main{
+	font-size: 1.2em;
+	padding: 5%;
+	font-family: PTSerif, Georgia, "Times New Roman", Times, serif;
+	text-indent: 5em;
+}
+div#code{
+	border-top: #0F0 2px solid;
+	border-bottom: #0F0 2px solid;
+	background-color: #000;
+	display: block;
+	color: #0F0;
+	padding: 2%;
+	margin: 1%;
+	width: 90%;
+	font-family: "Courier New", Courier, monospace;
+}
+}

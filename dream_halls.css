@@ -1,0 +1,199 @@
+body {
+    margin: 0px;
+    font-family: 'Cabin', sans-serif;
+}
+
+h1, p, a {
+    font-family: 'Cabin', sans-serif;
+}
+
+#main-container {
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#nav-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#BA7B0C;
+}
+
+#header {
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#comm-logo {
+    max-width: 65%;
+    max-height: 65%;
+}
+
+/*About Container*/
+#about {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 25px;
+    background-color: #BA7B0C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-header {
+    font-size: 50px;
+}
+
+#about-paragraph-container{
+    display: flex;
+    align-items: center;
+}
+
+#greider-small {
+    width: 340px;
+    height: auto;
+}
+
+#about-par {
+    width: 320px;
+    padding-left: 20px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.class-header {
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align:center;
+    font-family: 'Cabin', sans-serif;
+}
+
+.instruction-header {
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-bottom: 30px;
+}
+
+#classes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.class-image {
+    position: flex;
+    width: 100%;
+    max-width: 600px;
+    padding-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin-top: 50px;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+#foot-image-container {
+    display: flex;
+    min-width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-nav {
+    list-style: none;
+    justify-content: space-around;
+    min-width: 200px;
+    color: white;
+}
+
+footer > ul > li > a {
+    color: white;
+}
+
+#bottom-nav > ul > li > a {
+    color: white;
+}
+
+/*start of media query small screen*/
+@media only screen and (max-width: 700px){
+
+#header{
+    height: 400px;
+}
+
+#comm-logo {
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.about-header {
+    font-size: 50px;
+    font-family: 'Cabin', sans-serif;
+}
+
+#about-paragraph-container{
+    flex-direction: column;
+}
+
+#about-par {
+    width: 300px;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.class-name {
+    justify-content: center;
+    top: 100px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+footer{
+    flex-direction: column;
+    padding-top: 0px;
+}
+
+#bottom-image{
+     margin-top: 50px;
+}
+
+#bottom-nav{
+    order: 1;
+    margin-top: 25px;
+}
+
+}/*end of media query small screen

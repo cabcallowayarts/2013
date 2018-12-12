@@ -1,0 +1,46 @@
+.officer{
+    display: inline-block;
+    width: 440px;
+    margin: 4%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.officer *{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.officer .image{
+    height: 400px;
+    width: 400px;
+}
+.officer .image img{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.officer h2{
+    color: rgb(117,91,116);
+    font-size: 2em;
+    margin: 0px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.officer h3{
+    color: #999;
+    margin: 0px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    letter-spacing: 1px;
+}
+
+.officer p{
+    text-align: justify;
+    line-height: 1.7em;
+    font-size: 1.3em;
+}

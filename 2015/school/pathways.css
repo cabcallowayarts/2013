@@ -1,0 +1,222 @@
+div.quotecontainer{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(250,250,250);
+}
+.quoter .head{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-image: url(digital_pics/greider.jpg);
+    background-size: 100% 100%;
+    display: inline-block;
+}
+.quoter .name{
+    display: inline-block;
+    padding-left: 10px;
+    transform: translateY(-25%);
+    font-family: 'Montserrat', sans-serif;
+}
+.name h1, h2{
+    margin: 5px;
+    padding: 0px;
+    text-align: left;
+}
+.name h1{
+    color: rgb(62,72,86);
+    font-size: 2em;
+}
+.name h2{
+    color: #999;
+    font-size: 1em;
+}
+q{
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 50px;
+    font-size: 2em;
+    line-height: 1.4em;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main hr{
+    border: 2px rgb(62,72,86) solid;
+}
+
+
+img.sectionheader{
+    display: block;
+    margin: auto;
+    height: 60px;
+    width: auto;
+}
+
+/*Video Stuff*/
+
+.videocontainer{
+    margin: 2em;
+    display: inline-flex;
+}
+
+.videocontainer h2{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(62,72,86);
+    text-align: center;
+    font-size: 2em;
+    margin: 1em;
+}
+
+.videocontainer .video{
+    width: 640px;
+    height: 360px;
+    border: 2px rgb(62,72,86) solid;
+    margin: 10px;
+}
+
+.canadian{
+    background-image: url(digital_pics/canadian.jpg);
+}
+.canadian:hover{
+    background-image: url(digital_pics/canadian_hover.jpg);
+}
+
+.photographer{
+    background-image: url(digital_pics/photography.jpg);
+}
+.photographer:hover{
+    background-image: url(digital_pics/photography_hover.jpg);
+}
+
+.videocontainer h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #DDD;
+    margin: 5px;
+}
+
+
+/* Image Stuff */
+
+.imagecontainer{
+    margin: 3%;
+    width: 40%;
+    display: inline-block;
+}
+
+.imagecontainer h2{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(62,72,86);
+    font-size: 2em;
+    margin: 5px;
+}
+
+.imagecontainer h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #DDD;
+    margin: 3px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.imagecontainer .largeimage{
+    width: 100%;
+}
+
+.imagecontainer .largeimage .image{
+    width: 100%;
+    height: 600px;
+    border: 2px rgb(62,72,86) solid;
+}
+
+.photo1{
+    background-image: url(digital_pics/photo1.jpg);
+    background-size: auto 100%;
+    background-position: center;
+}
+.photo2{
+    background-image: url(digital_pics/photo2.jpg);
+    background-size: 100% auto;
+    background-position: center;
+}
+.photo3{
+    background-image: url(digital_pics/photo3.jpg);
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.imagecontainer .smallimage{
+    display: block;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.imagecontainer .smallimage .image{
+    height: 200px;
+    width: 100%;
+    border: 2px rgb(62,72,86) solid;
+}
+
+/* Design Stuff */
+
+.section .website{
+    width: 90%;
+    height: 600px;
+    border: 2px rgb(62,72,86) solid;
+}
+
+.design1{
+    background-image: url(digital_pics/design1.jpg);
+    background-size: auto 100%;
+    background-position: center;
+}
+.description1{
+    width: 48%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #DDD;
+    margin: 0px;
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+.design2{
+    background-image: url(digital_pics/design2.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    margin-bottom: 0px;
+}
+.design3{
+    background-image: url(digital_pics/design3.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    margin-bottom: 0px;
+}
+.description2{
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #DDD;
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+.description3{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #DDD;
+    margin: 0px;
+    font-size: 1.5em;
+}
+
+.section .font, .poster{
+    width: 40%;
+    margin: 4%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    display: inline-flex;
+    height: 600px;
+    border: 2px rgb(62,72,86) solid;
+}

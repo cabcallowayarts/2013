@@ -1,0 +1,420 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h2 {
+font:90px/90px "Rockwell";
+text-transform:uppercase;
+color:#000000;
+background:rgba(255,255,255,1);
+display:inline-block;
+margin:5px 0px;
+padding:5px 25px;
+letter-spacing:2px;
+}
+
+#title {
+position:absolute;
+bottom:70px;
+}
+
+
+
+#sec3 h1, #sec4 h1, #sec5 h1 {
+font-size:60px;
+line-height:40px;
+text-transform:uppercase;
+font-weight:100;
+color:black;
+display:block;
+margin:0px;
+position:absolute;
+left:5%;
+top:7%;
+width:100%;
+}
+
+
+
+
+
+/* ========= Cab Calloway TSA ========= */
+#sec1 {
+background-color:#999;
+background-image:url(chaptercover.jpg);
+background-repeat:no-repeat;
+background-position:50% 50%;
+z-index: 90;
+}
+#sec1 .textbox {
+background-color:#72d1d9;
+}
+
+
+
+
+
+/* ========= Our Chapter ========= #3d3d3d */
+#sec2 {
+background-color:#333333;
+z-index:89;
+}
+#sec2 h1 {
+text-transform:uppercase;
+font-size:55px;
+border:px solid red;
+padding:0px;
+position:relative;
+float:right;
+width:54%;
+margin-top:5%;
+}
+#sec2 .textbox {
+background-color:#f4d66b;
+}
+#sec2 .left, #sec2 .right {
+position:absolute;
+top:15%;
+}
+
+.left {
+	overflow:hidden;
+}
+
+.right {
+	overflow-y:scroll;
+}
+
+#sec2 .left {
+border:px solid red;
+left:5%;
+width:34%;
+height:72%;
+padding:0px;
+}
+#sec2 .right {
+right:5%;
+width:53%;
+height:70%;
+padding:10px;
+background-color:#474747;
+color:white;
+font:20px/24px "TW Cen MT", sans-serif;
+}
+#sec2 .left .success {
+background-color:#ffffff;
+color:#333333;
+display:block;
+font:30px/40px "Rockwell", serif, mono-space;
+text-transform:uppercase;
+padding:0px 20px;
+}
+#sec2 .left table {
+border:px solid red;
+padding:0px;
+width:100%;
+}
+#sec2 .left table th {
+background-color:#474747;
+color:white;
+display:block;
+margin-top:10px;
+padding:0px 10px;
+font:25px/40px "TW Cen MT",sans-serif;
+text-align:left;
+}
+#sec2 .left table tr td {
+background-color:#3d3d3d;
+color:white;
+padding:0px 10px 0px 60px;
+font:16px/30px "TW Cen MT",sans-serif;
+text-transform:uppercase;
+}
+#sec2 .left table tr td a {
+color:white;
+text-decoration:none;
+}
+#sec2 .left #group {
+border:px solid blue;
+position:relative;
+top:10px;
+left:0px;
+width:100%;
+height:100%;
+display:block;
+overflow:hidden;
+/*
+background:url('group.jpg') no-repeat;
+background-position:0% 0%;*/
+}
+#sec2 .left #group img {
+position:relative;
+top:-130px;
+left:0px;
+width:100%;
+}
+
+
+
+
+
+/* ========= Members ========= */
+#sec3 {
+background-color:#72c9d9;
+z-index:88;
+}
+#sec3 h1 {
+color:black;
+}
+#sec3 .images {
+position:relative;
+top:15%;
+height:70%;
+margin:0px 75px;
+}
+#sec3 table {
+width:100%;
+height:100%;
+}
+#sec3 table tr {
+margin-top:15px;
+}
+#sec3 td {
+position:relative;
+width:220px;
+height:150px;
+vertical-align:top;
+padding-right:50px;
+}
+#sec3 .line2 td {
+top:20px;
+}
+#sec3 .line3 td {
+top:40px;
+}
+#sec3 .line4 td {
+top:60px;
+}
+#sec3 img {
+margin:0px;
+padding:0px;
+position:relative;
+width:250px;
+height:150px;
+z-index:99;
+top:0px;
+left:0px;
+}
+#sec3 .name {
+display:block;
+position:relative;
+z-index:100;
+width:120px;
+height:20px;
+top:0px;
+left:400px;
+writing-mode:tb-rl;
+font:14px/14px "TW Cen MT",sans-serif;
+text-align:left;
+padding-left:5px;
+text-transform:uppercase;
+transform: rotate(90deg);
+transform-origin:left top;
+-ms-transform: rotate(90deg);
+-ms-transform-origin:left top;
+-webkit-transform:rotate(90deg);
+-webkit-transform-origin:left top;
+-moz-transform:rotate(90deg);
+-moz-transform-origin:left top;
+-o-transform: rotate(90deg);
+-o-transform-origin:left top;
+}
+
+#sec3 .images .title {
+border:px solid blue;
+position:relative;
+top:-28px;
+z-index:999;
+width:250px;
+height:28px;
+font:24px/28px "TW Cen MT",sans-serif;
+text-transform:uppercase;
+text-align:center;
+color:black;
+background:rgba(255,255,255,0.5);
+display:inline-block;
+}
+
+#sec3 .images td.label {
+color:rgba(0,0,0,0.75);
+font:24px/28px "TW Cen MT",sans-serif;
+text-transform:uppercase;
+text-align:left;
+padding-top:10px;
+position:relative;
+left:30px;
+top:70px;
+}
+
+
+
+/* ========= Our Past ========= */
+#sec4 {
+background-color:#d85b5b;
+z-index:87;
+}
+#sec4 #pastpics {
+position:relative;
+top:15%;
+height:70%;
+margin:0px 75px;
+}
+#sec4 table {
+position:relative;
+border:px solid blue;
+}
+#sec4 td {
+border:px solid lime;
+position:relative;
+overflow:hidden;
+text-align:center;
+width:250px;
+max-width:250px;
+height:200px;
+max-height:200px;
+z-index: 17;
+-webkit-transition: .2s linear height;
+-moz-transition: .2s linear height;
+transition: .2s linear height;
+}
+
+#sec4 td img {
+position:relative;
+top:0px;
+left:0px;
+width:auto;
+height:100%;
+}
+
+#sec4 #pastpics table tr td .thumb {
+border:px solid cyan;
+overflow:hidden;
+text-align:center;
+width:250px;
+max-width:250px;
+height:200px;
+max-height:200px;
+}
+
+#sec4 #pastpics table tr td .thumb.sm img {
+width:100%;
+height:auto;
+}
+
+
+
+
+
+div#cover{
+position: absolute;
+left: 0px;
+top: 0px;
+background-color:#000;
+opacity: .7;
+}
+
+
+
+
+
+/* ========= Fundraising ========= */
+#sec5 {
+background-color:#333333;
+z-index:86;
+}
+#sec5 h1 {
+width:45%;
+font-size:55px;
+text-transform:uppercase;
+color:white;
+top:4%;
+}
+#sec5 #fundcontent {
+position:relative;
+top:15%;
+height:70%;
+margin:0px 75px;
+}
+#sec5 #tshirtimages {
+width:100%;
+padding:0px;
+text-align:center;
+}
+
+#sec5 .fundimg {
+width:150px;
+height:150px;
+background:white;
+display:inline-block;
+margin:0px 5px;
+overflow:hidden;
+}
+#sec5 .fundimg img {
+position:relative;
+top:0px;
+left:0px;
+height:auto;
+width:100%;
+}
+#sec5 #tshirtimages_labels {
+width:100%;
+padding:5px 0px;
+text-align:center;
+}
+#sec5 .fundlabel {
+display:inline-block;
+margin:0px 5px;
+width:150px;
+background:#3C3C3C;
+font:16px/20px "TW Cen MT",sans-serif;
+text-transform:uppercase;
+color:white;
+}
+
+#sec5 #creed {
+width:100%;
+margin-top:30px;
+}
+#sec5 #creed img {
+position:relative;
+top:0px;
+left:0px;
+height:60px;
+width:auto;
+}
+#sec5 #creed h4 {
+padding:0px;
+font:60px/60px "Rockwell",serif;
+text-transform:uppercase;
+color:white;
+height:60px;
+display:inline-block;
+margin:0px 20px;
+}
+#sec5 #creed .creedsub {
+font:30px/60px "TW Cen",sans-serif;
+color:white;
+padding:0px;
+margin:0px 10px;
+position:absolute;
+height:60px;
+display:inline-block;
+}
+#sec5 .creedtext {
+background:#494949;
+font:16px/20px "TW Cen",sans-serif;
+color:white;
+padding:10px;
+margin:10px 0px;
+}
+
+

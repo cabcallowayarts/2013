@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="jquery.lightbox-0.5.css" />
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="jquery.lightbox-0.5.pack.js"></script>
+<style type="text/css">
+#pastpics {
+border:1px solid lime;
+}
+#pastpics .thumb {
+border:px solid red;
+width:250px;
+height:200px;
+overflow:hidden;
+display:inline-block;
+}
+#pastpics .thumb img {
+height:100%;
+width:auto;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div id="pastpics">
+<div class="thumb"><a href="group.jpg"><img src="group.jpg" /></a></div>
+<div class="thumb"><a href=""><img src="our_past/1_lg.jpg" /></a></div>
+<div class="thumb"><a href=""><img src="our_past/2_lg.jpg" /></a></div>
+<div class="thumb"><a href=""><img src="our_past/5_lg.jpg" /></a></div>
+<div class="thumb"><a href=""><img src="our_past/6_lg.jpg" /></a></div>
+<div class="thumb"><a href=""><img src="our_past/8_lg.jpg" /></a></div>
+</div>
+
+
+
+<script type="text/javascript">
+
+$(function() {
+	$('#pastpics .thumb a').lightBox({
+		fixedNavigation:true,
+		imageBtnPrev: 'img/arrow_index1.png',
+		imageBtnNext: 'img/arrow_index.png',
+		imageLoading: 'img/progress.gif'
+		});
+});
+
+$('#pastpics .thumb img').each(function(){	$(this).parents('a').attr('href',$(this).attr('src')); });
+
+$(document).ready(function(){
+
+$('#pastpics .thumb img').each(function(){	$(this).parents('a').attr('href',$(this).attr('src')); });
+
+
+
+});
+
+
+</script>
+</body>
+</html>

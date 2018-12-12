@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="styles/css.css">
+<title>Id's and Classes</title>
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+	<a id="first" href="more_styles.html">&#60;- More Styles</a>
+	<a id="last" href="what_not_to_do_css.html">What Not to Do -&#62;</a>
+</div>
+<h1>Id's and Classes</h1>
+<div id="content">
+<p>
+Some of the attributes that you learned in the HTML section were the <b>class</b> and <b>id</b> attributes. They were meant as a way to specify certain elements apart from others, but, at the time, they didn't have much of a purpose. However, now that we come to CSS, they become extremely useful. This is because you can use id's and classes to specify one element of a certain type from another. For example, if you have two p elements, and you want one to have red text and one to have blue text you can do this:
+</p>
+<div id="code">
+	p.red{<br>
+		color: red;<br>
+	}<br>
+	p.blue{<br>
+		color: blue;<br>
+	}
+</div>
+<p>
+What you just saw was CSS using the classes of these two elements to tell them apart. As you could imagine, the code for them looked like this:
+</p>
+<div id="code">
+&#60;p class="red"&#62;Hello World&#60;/p&#62;<br>
+&#60;p class="blue"&#62;Lorem Ipsum&#60;/p&#62;
+</div>
+<p>
+A similar thing can be done with id's, but the syntax is just slightly different:
+</p>
+<div id="code">
+p#red{<br>
+	color: red;<br>
+}<br>
+p#blue{<br>
+	color: blue;<br>
+}
+</div>
+<p>
+The HTML is exactly the same here, except instead of a class attribute, there is an id attribute. When you are dealing with only CSS, it is best to just use classes, as the syntax is a bit simpler, but if you ever move on to other languages, such as Javascript, id's become much more useful.
+</p>
+<p>
+Now that you have learned the basics of id's and classes, you can learn more about how they work. First off, both classes and id's can be reused across elements. For example, you can give p, a div, and a b element a class of test, and then change the color of them all with this:
+</p>
+<div id="code">
+.test{<br>
+	color: red;<br>
+}
+</div>
+<p>
+This can be very useful if you want to reuse your styles across multiple elements, to save time typing and conserve file space. This also means you can apply the same .css file across multiple .html files, but we will learn about that later.
+</p>
+</div>
+</div>
+</body>
+</html>

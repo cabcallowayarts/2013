@@ -1,0 +1,35 @@
+div.shpeal{
+    width: 50%;
+    margin-left: 25%;
+    font-size: 28px;
+}
+.shpeal p{
+    text-indent: 3em;
+    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+span.learnmore{
+    display: inline-block;
+    padding: 12px 8px 12px 8px;
+    border: rgba(117,91,116,1) 3px solid;
+    transition: .1s linear all;
+    font-family: 'Montserrat', sans-serif;
+}
+span.learnmore:hover{
+    background-color: rgba(117,91,116,1);
+    color: #FFF;
+}
+a .learnmore{
+    color: rgba(117,91,116,1);
+    text-decoration: none;
+    transition: .1s linear all;
+    letter-spacing: 1px;
+}
+span.learnmore:hover a{
+    color: #FFF;
+}
+
+.main hr{
+    border: 2px rgb(117,91,116) solid;
+}

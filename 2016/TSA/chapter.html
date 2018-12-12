@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="chapterStyle.css">
+	<title>Chapter</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+    </script>
+</head>
+<body onscroll="updateHeader()">
+	<div id="nav">
+    <div class="nav" id="school">
+      <a class="nav1" href="school.html">SCHOOL<div></div></a>
+    </div>
+    <div class="nav" id="learning">
+      <a class="nav1" href="learning.html">LEARNING<div></div></a>
+    </div>
+    <a href="index.html" >
+        <img src="cab_script.png" id="logo"/>
+        </a>
+    <div class="nav" id="chapter">
+      <a class="nav1" href="chapter.html">CHAPTER<div></div></a>
+    </div>
+        <a href="design-brief/index.html" id="designLink">
+    <div class="nav" id="designb">
+        <p class="nav" >DESIGN BRIEF</p>
+    </div>
+        </a>
+
+  </div>
+
+    <div id="submenu">
+        <div class="hr1" ></div>
+        <div id="holder">
+            <a class="nav2" href="#about">ABOUT</a>
+            <a class="nav2" href="#officers">OFFICERS</a>
+            <a class="nav2" href="#chapterb">CHAPTER ACTIVITIES</a>
+             <a class="nav2" href="#past">PAST</a>
+        </div>
+        <div class="hr1" ></div>
+    </div>
+
+    <div id="main">
+        <h1>CAB CALLOWAY &#9829;'s TSA</h1>
+	</div>
+
+   <div name="about" id="about" class="bar">
+        <img class ="header"src="School_Photos/School_Vectors/About_Stroke.png">
+    </div>
+
+   <div id="body1" class="body">
+    <h1>OUR MOTTO</h1>
+    <div class="learnhr"></div>
+    <p id="motto">"LEARNING TO LIVE IN A TECHNICAL WORLD"</p>
+    <p class="body">In Cab Calloway TSA, we do out best to find the intersection between technology and the arts. We specialize in events that combine the two, such as Webmaster, Desktop Publishing, Promotional Graphics, and Music Production. We have grown immensely in the four years since our conception, and we hope to keep growing and contributing to TSA.</p>
+   </div>
+
+    <div name="officers" id="officers" class="bar">
+          <img class ="header"src="School_Photos/School_Vectors/Officers_Stroke.png">
+    </div>
+
+   <div id="body2" class="body">
+    <div class="row">
+     <div id="adam" class="cube"><div><h2>Adam Udovich</h2><h3>President</h3></div></div>
+     <div id="annmarie" class="cube"><div><h2>Annmarie Seward</h2><h3>Secretary</h3></div></div>
+     <div id="karl" class="cube"><div><h2>Karl Stomberg</h2><h3>Treasurer</h3></div></div>
+     </div>
+      <div class="row">
+     <div id="kay" class="cube"><div><h2>Kay Withrow</h2><h3>Seargent-at-Arms</h3></div></div>
+     <div id="lukas" class="cube"><div><h2>Lukas MacKinney</h2><h3>Vice President</h3></div></div>
+     <div id="minji" class="cube"><div><h2>Minji Kong</h2><h3>Reporter</h3></div></div>
+   </div>
+   </div>
+
+   <div name="chapterb" id="chapterb" class="bar">
+          <img id="chapact" class ="header"src="School_Photos/School_Vectors/Chapter_Activities_Stroke.png">
+    </div>
+
+
+
+    <div id="body3" class="body">
+
+    <h1>3D MODEL FUNDRAISER</h1>
+    <div class="learnhr"></div>
+        <div class="bigpicture" id="threed"></div>
+        <p class="body">After receiving a grant for a 3D printer, the TSA club has started to produce and print 3D models, selling them at multiple school events. Since starting this year, the club has raised hundreds of dollars in order to help us finance peoples' trips to the national competition.<br><br><br></p>
+
+          <h1>T-SHIRT FUNDRAISER</h1>
+    <div class="learnhr"></div>
+    <div id="shirtcont">
+    <div class="cube" id="shirt"></div>
+     <p class="body" id="shirtp">Harnessing the skills of our chapter's digital artists, we designed and printed over 200 T-shirts to raise funds for nationals. The varied designs included a promotional graphic for our school's 20th anniversary and a stylish abstract design to appeal to younger audiences. Our members worked their sales skills at shows, events, and school functions.<br><br><br></p>
+   </div>
+ </div>
+
+
+   <div name="past" id="past" class="bar">
+          <img class ="header"src="School_Photos/School_Vectors/Past_Stroke.png">
+    </div>
+
+    <div id="body4" class="body">
+        <h1>HOW IT BEGAN</h1>
+    <div class="learnhr"></div>
+     <p class="body">At Cab Calloway School of the Arts Middle School, Business Professionals of America (BPA), is a club that many students join and enjoy. It is a Career and Technical Student Organization that allows students to further their pursuance in careers dealing with management, administration, information technology, and many other career fields that are related.</p>
+        <p class="body">Because of a large interest in technology, the High School Communication Arts teacher Mrs. Fanny worked hard to meet the interests of students and in 2010, the Cab Calloway TSA Chapter was founded. In 2011, our Chapter made it all the way to Nationals. Unfortunately we didn't place in anything but members enjoyed the experience and the opportunity. TSA allowed them to create strong bonds with other peers that they would have never imagined and to meet and make new friends at Nationals in Nashville, Tennessee.<br><br><br></p>
+
+	<footer>
+
+        <div class="footer-top">
+            <a href="index.html"><img src="cab_script.png"/></a>
+            <ul class="footer-menu">
+                <li>
+                    <ul>
+                        <li>SCHOOL</li>
+                        <li><a href="school.html#about">ABOUT</a></li>
+                        <li><a href="school.html#majors">THE MAJORS</a></li>
+                        <li><a href="school.html#visit">VISIT US</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>LEARNING</li>
+                        <li><a href="learning.html#curric">STEM CURRICULUM</a></li>
+                        <li><a href="learning.html#career">CAREER PATHWAY</a></li>
+                        <li><a href="learning.html#clubs">STEM CLUBS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>CHAPTER</li>
+                        <li><a href="chapter.html#about">ABOUT</a></li>
+                        <li><a href="chapter.html#officers">OFFICERS</a></li>
+                        <li><a href="chapter.html#chapterb">ACTIVITIES</a></li>
+                        <li><a href="chapter.html#past">PAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>DESIGN BRIEF</li>
+                        <li><a href="design-brief/about.html">ABOUT</a></li>
+                        <li><a href="design-brief/commercial.html">COMMERCIAL</a></li>
+                        <li><a href="design-brief/educational.html">EDUCATIONAL</a></li>
+                        <li><a href="design-brief/research.html">RESEARCH</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="footer-bottom">
+            <span><em>2016</em> CAB CALLOWAY TSA</span>
+             <div class="icons">
+                <div class="icon">
+                    <a href="https://facebook.com/CabCallowaySchooloftheArts/"><img src="School_Photos/School_Vectors/Icons/Facebook_Icon.png"/></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.instagram.com/cabcallowayarts/"><img src="School_Photos/School_Vectors/Icons/Instagram_Icon.png"/></a>
+                </div>
+                <div class="icon">
+                    <a href="https://twitter.com/cabcallowayarts"><img src="School_Photos/School_Vectors/Icons/Twitter_Icon.png"/></a>
+                </div>
+                <div class="icon">
+                    <a href="https://vimeo.com/cabcallowayschool"><img src="School_Photos/School_Vectors/Icons/Vimeo_Icon.png"/></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function updateHeader(){
+            if(window.pageYOffset > 120){
+                $("#nav").css("top","-120px");
+                $("#nav").css("position","fixed");
+                $("#submenu").css("top","0px");
+                $("#submenu").css("position","fixed");
+            }else{
+                $("#nav").css("top","0px");
+                $("#nav").css("position","absolute");
+                $("#submenu").css("top","120px");
+                $("#submenu").css("position","absolute");
+            }
+        }
+        var isShowing = false;
+        function toggleMenu(){
+            if(isShowing){
+                $( ".menu-wrapper" ).slideUp(100);
+                $( ".hamburger-menu" ).css("background-image", "url('hamburger_menu.png')");
+                isShowing = false;
+            }else{
+                $( ".menu-wrapper" ).slideDown(100);
+                $( ".hamburger-menu" ).css("background-image", "url('hamburger_x.png')");
+                isShowing = true;
+            }
+        }
+    </script>
+    <script src="https://use.typekit.net/jxa8umn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</body>
+</html>

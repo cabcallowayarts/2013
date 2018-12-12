@@ -1,0 +1,10 @@
+#main{
+	background-image: url('Graduation1.jpg');
+}
+div#nav{
+	background-color: transparent;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+}

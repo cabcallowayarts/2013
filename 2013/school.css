@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+
+h2 {
+font:90px/90px "Rockwell";
+text-transform:uppercase;
+color:#000000;
+background:rgba(255,255,255,1);
+display:inline-block;
+margin:5px 0px;
+padding:5px 25px;
+letter-spacing:2px;
+}
+
+#title {
+position:absolute;
+bottom:70px;
+}
+
+
+
+
+/* ========= Cab Calloway School Of The Arts ========= */
+#sec1 {
+background-color:#999 ;
+background-image: url(cabcover.jpg);
+background-repeat:no-repeat;
+background-position:50% 50%;
+z-index: 90;
+}
+#sec1 .textbox {
+background-color:#72d1d9;
+}
+
+
+/* ========= Cab Calloway School ========= */
+#sec2 {
+background-color:#333333;
+z-index:89;
+}
+#sec2 h1 {
+text-transform:uppercase;
+font-size:45px;
+border:px solid red;
+padding:0px;
+position:relative;
+float:right;
+width:54%;
+margin-top:3%;
+}
+#sec2 .left, #sec2 .right {
+position:absolute;
+top:15%;
+overflow:hidden;
+}
+
+#sec2 .left {
+border:px solid red;
+left:5%;
+width:34%;
+height:72%;
+padding:0px;
+}
+#sec2 .right {
+right:5%;
+width:53%;
+height:70%;
+padding:10px;
+background-color:#474747;
+color:white;
+overflow-y:scroll;
+font:20px/24px "TW Cen MT", sans-serif;
+}
+#sec2 .left .info {
+background-color:#ffffff;
+color:#333333;
+display:block;
+font:30px/40px "Rockwell", serif, mono-space;
+text-transform:uppercase;
+padding:0px 20px;
+}
+#sec2 .left table {
+border:px solid red;
+padding:0px;
+width:100%;
+}
+#sec2 .left table th {
+background-color:#474747;
+color:white;
+display:block;
+margin-top:10px;
+padding:0px 10px;
+font:25px/40px "TW Cen MT",sans-serif;
+text-align:left;
+}
+#sec2 .left table tr td {
+background-color:#3d3d3d;
+color:white;
+padding:0px 10px 0px 60px;
+font:16px/30px "TW Cen MT",sans-serif;
+text-transform:uppercase;
+}
+#sec2 .left table th a {
+color:white;
+text-decoration:none;
+
+}
+#sec2 img {
+border:px solid blue;
+position:relative;
+top:0px;
+left:-11px;
+width:100%;
+margin:0px;
+padding:0px;
+}
+
+.statue {
+padding:0px;
+position:relative;
+top:0px;
+left:0px;
+border:px solid red;
+display:block;
+height:100%;
+width:100%;
+}
+
+
+
+
+
+
+/* ========= Carreer Pathway ========= */
+#sec3 {
+background-color:#72c9d9;
+z-index:88;
+}
+#sec3 h1 {
+color:black;
+}
+#sec3 h4 {
+margin:0px;
+padding:0px;
+display:inline-block;
+position:absolute;
+margin-top:110px;
+left:6%;
+font:35px/30px "Tw Cen MT","Century Gothic",sans-serif;
+text-transform:uppercase;
+}
+#sec3 #careercontent {
+border:px solid yellow;
+position:relative;
+top:17%;
+height:70%;
+margin:0px 75px;
+}
+
+#sec3 #careercontent .left {
+border:px solid pink;
+width:49%;
+height:100%;
+}
+#sec3 #careercontent table {
+
+}
+#sec3 #careercontent tr {
+height:150px;
+}
+#sec3 #careercontent tr.spacer {
+height:20px;
+}
+#sec3 #careercontent td {
+border:px solid yellow;
+height:100px;
+}
+#sec3 #careercontent td.image {
+background:#FFFFFF;
+width:150px;
+}
+#sec3 #careercontent td.image img {
+position:relative;
+top:0px;
+left:0px;
+height:100%;
+width:auto;
+}
+#sec3 #careercontent td.image.digitalmedia {
+background-image:url('art/3small.jpg');
+background-size:auto 100%;
+}
+#sec3 #careercontent td.image.cinema {
+background-image:url('art/cinema_thumb.jpg');
+background-size:auto 100%;
+}
+#sec3 #careercontent td.image.photography {
+background-image:url('art/ella_thumb.jpg');
+background-size:auto 100%;
+}
+#sec3 #careercontent td.image.insight {
+background-image:url('art/insight_thumb.jpg');
+background-size:auto 100%;
+}
+#sec3 #careercontent .desc {
+background:#A7DDE7;
+padding:10px 20px;
+font:16px/18px "Tw Cen MT","Century Gothic",sans-serif;
+height:130px;
+max-width:400px;
+overflow-y:scroll;
+}
+#sec3 #careercontent .desc a {
+color:black;
+}
+
+
+
+
+#sec3 #careercontent .right {
+border:px solid pink;
+width:49%;
+height:100%;
+position:absolute;
+right:0px;
+top:0px;
+}
+
+#sec3 #careercontent .right td.picsofclass {
+padding:0px 0px;
+width:400px;
+max-width:400px;
+border:px solid red;
+text-align:justify;
+}
+#sec3 #careercontent .right td.picsofclass .lab1, #sec3 #careercontent .right td.picsofclass .lab2, #sec3 #careercontent .right td.picsofclass .lab3 {
+height:150px;
+border:px solid blue;
+display:inline-block;
+overflow:hidden;
+position:relative;
+top:0px;
+left:0px;
+}
+.lab2 {
+width:44%;
+}
+.lab1, .lab3 {
+width:27%;
+}
+
+#sec3 #careercontent .right td.picsofclass img {
+position:relative;
+top:0px;
+left:0px;
+height:100%;
+width:auto;
+}
+
+#sec3 #careercontent .right .gallery {
+position:relative;
+width:580px;
+overflow:hidden;
+margin:0px;
+padding:0px;
+top:0px;
+border:px solid red;
+text-align:center;
+
+}
+#sec3 #careercontent .right .gallery img {
+position:relative;
+text-align:center;
+width:auto;
+height:65px;
+float:none;
+top:0px;
+left:0px;
+margin-right:20px;
+}
+#sec3 #careercontent .right .gallery .lineone {
+position:relative;
+display:block;
+height:60%;
+}
+#sec3 #careercontent .right .gallery .linetwo {
+position:relative;
+display:block;
+height:60%;
+border:px solid magenta;
+top:-12px;
+}
+
+
+/*
+#sec3 .sect, #sec3 .sect2 {
+position:relative;
+top:0px;
+display:inline-block;
+border:px solid lime;
+width:48%;
+height:150px;
+margin:0px;
+padding:0px;
+background-color:#a7dde7;
+}
+#sec3 .sect2 {
+margin-left:10px;
+}
+#sec3 .sect img, #sec3 .sect2 img {
+position:relative;
+float:left;
+display:inline-block;
+top:0px;
+left:0px;
+width:150px;
+height:150px;
+margin-right:20px;
+background-color:white;
+
+}
+#sec3 .sect .desc, #sec3 .sect2 .desc {
+font:16px/18px "Tw Cen MT","Century Gothic",sans-serif;
+padding:10px 5px;
+overflow-y:hidden;
+overflow-x:hidden;
+}
+
+#sec3 .sect2.threepics img{
+width:;
+}
+*/
+
+
+
+/* ========= Arts Pathways ========= */
+#sec4 {
+background-color:#d85b5b;
+z-index:87;
+}
+#sec4 #artscontent {
+border:px solid yellow;
+position:relative;
+top:17%;
+height:70%;
+margin:0px 75px;
+}
+
+#sec4 #artscontent .left {
+border:px solid pink;
+width:49%;
+height:100%;
+}
+#sec4 #artscontent table {
+
+}
+#sec4 #artscontent tr {
+}
+#sec4 #artscontent tr.spacer {
+height:20px;
+}
+#sec4 #artscontent td {
+height:150px;
+}
+#sec4 #artscontent td.image {
+background:#FFFFFF;
+width:150px;
+}
+#sec4 #artscontent td.image img {
+position:relative;
+top:0px;
+left:0px;
+width:150px;
+height:150px;
+}
+#sec4 #artscontent .desc {
+background:#E9A3A3;
+padding:10px 20px;
+font:16px/18px "Tw Cen MT","Century Gothic",sans-serif;
+height:130px;
+max-width:400px;
+overflow-y:scroll;
+}
+
+
+
+
+#sec4 #artscontent .right {
+border:px solid pink;
+width:49%;
+height:100%;
+position:absolute;
+right:0px;
+top:0px;
+}
+
+#sec4 #artscontent .right .gallery {
+
+width:100%;
+top:-5px;
+
+}
+#sec4 #artscontent .right .gallery img {
+float:none;
+width:auto;
+height:75px;
+top:0px;
+left:0px;
+margin-right:5px;
+}
+#sec4 #artscontent .right .gallery .lineone {
+display:block;
+height:50%;
+margin-bottom:5px;
+}
+#sec4 #artscontent .right .gallery .linetwo {
+display:block;
+height:50%;
+position:relative;
+top:-20px;
+}
+
+
+
+
+
+
+
+#sec3 h1, #sec4 h1 {
+font-size:60px;
+line-height:40px;
+text-transform:uppercase;
+font-weight:100;
+color:black;
+display:block;
+width:100%;
+margin:0px;
+position:absolute;
+left:5%;
+top:5%;
+}
+

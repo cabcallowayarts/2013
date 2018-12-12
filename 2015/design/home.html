@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>E-Waste - Home</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="home.css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="header">
+    <center>
+    <a href="home.html"><img src="ewaste_title.png" /></a>
+    <ul>
+        <li><a class="selected" href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="devices.html">DEVICES</a></li>
+        <li><a href="solutions.html">SOLUTIONS</a></li>
+
+    </ul>
+    </center>
+
+    <div class="notcentered">
+    <img src="ewaste_title.png" />
+    <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="devices.html">DEVICES</a></li>
+        <li><a href="solutions.html">SOLUTIONS</a></li>
+
+        <a id="hamburger-icon">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+    </a>
+
+    </ul>
+    </div>
+</div>
+
+
+
+<div class="bodysection about">
+    <div class="subsection">
+        <h1>GLOBAL<br>EFFECT</h1>
+    <hr>
+    <p>E-waste has many socio-economic, public health, and environmental impacts.  This is a result of the toxins found in electronic waste.  Some of these toxins include lead, zinc, silver, cadmium, and copper.  These chemicals and heavy metals were found to be a very high concentration compared to reference sites.</p>
+
+    <a href="about.html">LEARN MORE</a>
+    </div>
+</div>
+
+<div class="bodysection devices">
+    <div class="subsection">
+        <h1>YOUR DEVICES</h1>
+        <hr>
+        <div class="phones"></div>
+        <span>Select your device to learn<br>where to dispose of it locally!</span>
+        <a href="devices.html">LEARN MORE</a>
+    </div>
+</div>
+
+<div class="bodysection solutions">
+    <div class="subsection">
+        <img src="giffy.gif" />
+        <hr>
+        <a href="solutions.html">LEARN MORE</a>
+    </div>
+</div>
+
+<div class="footerposition"></div>
+
+<div class="footer">
+    <a href="../index.html"><div class="logo"></div></a>
+    <div class="submenuwrapper">
+
+        <ul class="submenu">
+            <li>SCHOOL</li>
+            <li><a href="../school/school.html">ABOUT</a></li>
+            <li><a href="../school/school_pathways.html">CAREER PATHWAY</a></li>
+            <li><a href="../school/school_majors.html">MAJORS</a></li>
+        </ul>
+
+        <ul class="submenu">
+            <li>CHAPTER</li>
+            <li><a href="../chapter/chapter.html">OFFICERS</li>
+            <li><a href="../chapter/chapter_fundraisers.html">FUNDRAISING</a></li>
+            <li><a href="../chapter/chapter_past.html">PAST</a></li>
+        </ul>
+
+        <ul class="submenu">
+            <li>DESIGN BRIEF</li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="devices.html">DEVICES</a></li>
+            <li><a href="solutions.html">SOLUTIONS</a></li>
+        </ul>
+
+    </div>
+
+    <hr class="foot">
+
+    <span class="copyright">&#169;2015 CAB CALLOWAY TSA</span>
+
+</div>
+
+<script src="jquery.js"></script>
+<script>
+    var isExtended = false;
+   $(document).ready(function() {
+  var hamburger = $('#hamburger-icon');
+  var list = $('.header ul');
+  hamburger.click(function() {
+    hamburger.toggleClass('active');
+    if(isExtended){
+        list.animate({ left: "-320px"} , 200);
+        hamburger.animate({ left: "310px"} , 200);
+        isExtended = false;
+    }else{
+        list.animate({ left: "-40px"} , 200);
+        hamburger.animate({ left: "30px"} , 200);
+        isExtended = true;
+    }
+    return false;
+  });
+});
+</script>
+
+</body>
+
+</html>

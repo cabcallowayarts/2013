@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="index.css">
+<link rel="shortcut icon" href="dtc.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width">
+<title>DTC</title>
+</head>
+
+<body onload="sizeThings()" onResize="sizeThings()">
+<!-- Header, with title, search bar, and external links !-->
+<div id="header">
+<ul id="headerLinks">
+	<li id="first"><a href="index.html">Home</a></li>
+	<li><a href="chapter.html">CCSA Chapter</a></li>
+    <li><a href="school.html">CCSA School</a></li>
+    <li><a href="design_brief.html">Design Brief</a></li>
+	<li id="last"><a onClick="toggleComp()">Test Your Code</a></li>
+</ul>
+<input id="search" onFocus="updateSearch(this.value)" onKeyUp="updateSearch(this.value)" onBlur="searchList.innerHTML = '';" placeholder="Search" type="text" />
+<ul id="searches"></ul>
+</div>
+
+<!-- Sidebar, with general categories and individual sections !-->
+<div id="sidebar">
+	<div onclick="openSection('html')" onmouseover="peekOut('#C43770')" onmouseout="peekIn()" id="html" style="background-image: url(sidebar/html.jpg)">
+    </div>
+    <div onclick="openSection('css')" onmouseover="peekOut('#409230')" onmouseout="peekIn()" id="css" style="background-image: url(sidebar/css.jpg)">
+    </div>
+    <div onclick="openSection('design')" onmouseover="peekOut('#D96B2F')" onmouseout="peekIn()" id="design" style="background-image: url(sidebar/design.jpg)">
+    </div>
+    <div onclick="openSection('tech')" onmouseover="peekOut('#588DDE')" onmouseout="peekIn()" id="tech" style="background-image: url(sidebar/tech.jpg)">
+    </div>
+</div>
+
+<!-- Peek-a-boo! !-->
+<div id="peek">
+</div>
+
+<!-- Main area, which will contain all of the actual content !-->
+<iframe src="intro.html" id="main">
+</iframe>
+<iframe src="compiler.html" id="comp">
+</iframe>
+
+<div id="overlay">
+	<div id="fakeHeader">i</div>
+	<div id="fakeMain">
+		<h1>Loading...</h1>
+	</div>
+	<div id="fakeSidebar">i</div>
+</div>
+
+<script src="index.js" type="text/javascript"></script>
+<script src="jquery.js" type="text/javascript"></script>
+
+</body>
+</html>

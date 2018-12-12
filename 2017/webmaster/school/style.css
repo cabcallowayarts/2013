@@ -1,0 +1,505 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #000;
+
+}
+
+.nav{
+	justify-content: center;
+	display: flex;
+	width: 100vw;
+}
+
+
+.nav a{
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	padding-top: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+	/*text-align: center;*/
+	font-size: 30px;
+	width: 250px;
+}
+
+.nav a:hover{
+	text-decoration: none;
+}
+
+ a{
+	color: #fff;
+	text-decoration: none;
+}
+.footer a{
+	color: inherit;
+	text-decoration: none;
+}
+.footer a:hover{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+}
+
+.stamp:hover{
+	transform: scale(1.1,1.1);
+	transition: .2s;
+
+}
+
+.header{
+	width: 100%;
+	min-height: 500px;
+	background-color: #3A2D37;
+	text-align: center;
+	display: flex;
+	/*align-items: center;*/
+	/*justify-content: center;*/
+	flex-flow: column;
+	padding-top: 50px;
+	border: 0;
+	margin: 0;
+
+}
+footer{
+	width: 100vw;
+	background-color: #000;
+	margin: 0px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+footer ul{
+    list-style: none;
+    margin-right: 20px;
+}
+footer ul li{
+    display: inline-block;
+    vertical-align: text-top;
+}
+footer ul li ul li{
+    display: block;
+    font-family: "Open sans",sans-serif;
+    font-weight: 700;
+	font-variant: small-caps;
+    color: #666;
+    font-size: 12px;
+    padding-bottom: .4em;
+}
+footer ul li ul li:first-child{
+    color: #FFF;
+}
+footer img{
+	height: 100px;
+	width: auto;
+	margin-left: 20px;
+}
+
+
+
+.school{
+	padding-left: 0px;
+}
+
+.chapter{
+	padding-left: 160px;
+}
+
+.design{
+	padding-left: 300px;
+}
+
+
+
+.bold{
+	font-weight: bold;
+
+}
+
+
+#about{
+	border: 0px;
+	margin: 0px;
+	padding: 400px;
+	transition: .5s
+	color: #fff;
+	background-color: #000;
+	width: 600px;
+	height: 655px;
+	opacity: 0;
+	display: none;
+	font-weight: lighter;
+	font-family: "Open sans",sans-serif;
+}
+
+#aboutToggle{
+	min-height: 655px;
+	min-width: 100%;
+	max-width: 100%;
+	background-image: url(images/about.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .5s;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#aboutToggle:hover{
+	background-image: url(images/aboutopen.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 655px;
+	min-width: 100%;
+	max-width: 100%;
+	max-height: 655px;
+	transition: .5s;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#aboutToggle:hover #about{
+	display: block;
+	padding: 50px;
+	color: #fff;
+	transition: 1s;
+	height: 655px;
+	background-color: rgba( 0, 0, 0, .6);
+	opacity: 1;
+	width: 600px;
+
+}
+
+#majors{
+	border: 0px;
+	margin: 0px;
+	padding: 400px;
+	transition: .5s
+	color: #fff;
+	background-color: #000;
+	width: 600px;
+	height: 655px;
+	max-height: 655px;
+	opacity: 0;
+	display: none;
+	font-weight: lighter;
+	font-family: "Open sans",sans-serif;
+}
+
+#majorsToggle{
+	min-height: 655px;
+	min-width: 100%;
+	max-width: 100%;
+	background-image: url(images/majors.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .5s;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#majorsToggle:hover{
+	background-image: url(images/majorsopen.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 655px;
+	max-height: 655px;
+	min-width: 100%;
+	max-width: 100%;
+	transition: .5s;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#majorsToggle:hover #majors{
+	display: block;
+	padding: 50px;
+	color: #fff;
+	transition: 1s;
+	height: 655px;
+	max-height: 655px;
+	background-color: rgba( 0, 0, 0, .6);
+	opacity: 1;
+	width: 600px;
+
+}
+
+#career{
+	border: 0px;
+	margin: 0px;
+	padding: 400px;
+	transition: .5s
+	color: #fff;
+	background-color: #000;
+	width: 600px;
+	height: 655px;
+	opacity: 0;
+	display: none;
+	font-weight: lighter;
+	font-family: "Open sans",sans-serif;
+}
+
+#careerToggle{
+	min-height: 655px;
+	min-width: 100%;
+	max-width: 100%;
+	background-image: url(images/career.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .5s;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#careerToggle:hover{
+	background-image: url(images/careeropen.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 655px;
+	max-height: 655px;
+	min-width: 100%;
+	max-width: 100%;
+	transition: .5s;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#careerToggle:hover #career{
+	display: block;
+	padding: 50px;
+	color: #fff;
+	transition: 1s;
+	height: 655px;
+	background-color: rgba( 0, 0, 0, .6);
+	opacity: 1;
+	width: 600px;
+
+}
+
+#stem{
+	border: 0px;
+	margin: 0px;
+	padding: 400px;
+	transition: .5s
+	color: #fff;
+	background-color: #000;
+	width: 600px;
+	height: 655px;
+	max-height: 655px;
+	opacity: 0;
+	display: none;
+	font-weight: lighter;
+	font-family: "Open sans",sans-serif;
+}
+
+#stemToggle{
+	min-height: 655px;
+	max-height: 655px;
+	min-width: 100%;
+	max-width: 100%;
+	background-image: url(images/stem.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .5s;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#stemToggle:hover{
+	background-image: url(images/stemopen.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 655px;
+	max-height: 655px;
+	min-width: 100%;
+	max-width: 100%;
+	transition: .5s;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#stemToggle:hover #stem{
+	display: block;
+	padding: 50px;
+	color: #fff;
+	transition: 1s;
+	height: 555px;
+	max-height: 655px;
+	background-color: rgba( 0, 0, 0, .6);
+	opacity: 1;
+	width: 600px;
+
+}
+
+
+#Past{
+	background-color: #fff;
+	font-family: "Open sans",sans-serif;
+	margin:0;
+	padding: 0;
+	border: 0;
+}
+
+#Past p {
+	width: 50%;
+	padding-bottom: 80px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#Past h1{
+	color: grey;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	border: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#Officers{
+	background-color: #fff;
+	font-family: "Open sans",sans-serif;
+	margin:0;
+	padding: 0;
+	border: 0;
+}
+
+#Officers p {
+	width: 50%;
+	padding-bottom: 40px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#Officers h1{
+	color: grey;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	border: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#Fund{
+	background-color: #fff;
+	font-family: "Open sans",sans-serif;
+	margin:0;
+	padding: 0;
+	border: 0;
+}
+
+#Fund p {
+	width: 50%;
+	padding-bottom: 80px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+}
+
+#Fund h1{
+	color: grey;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	border: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+#Motto{
+	background-color: #fff;
+	font-family: "Open sans",sans-serif;
+	margin:0;
+	padding: 0;
+	border: 0;
+}
+
+#Motto p {
+	width: 50%;
+	padding-bottom: 80px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	border: 0;
+	margin-bottom: 0;
+}
+
+#Motto h1{
+	color: grey;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	border: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#test{
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+}
+
+.title h2{
+	width: 100%;
+	color: white;
+	border: 0;
+	margin-top: 0;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	font-size: 100px;
+}
+
+.title{
+	min-height: 100px;
+	background-color: #b3b3b3;
+	background-image: url(images/polygons.png)
+}
+@media screen and (max-width: 1100px) {
+	p{
+		font-size: 22px;
+	}
+	a{
+		font-size: 22px;
+	}
+	footer ul li ul li{
+	font-size: 30px;
+}
+footer img{
+	width: 200px;
+	height: auto;
+	margin-right: 20vw;
+	margin-left: 40px;
+}
+}
+
+

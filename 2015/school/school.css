@@ -1,0 +1,58 @@
+.headmenu li a{
+    text-decoration: none;
+    color: #000;
+}
+.headmenu li a.selected{
+    color: #AAA;
+}
+.header{
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.main hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 10%;
+    margin-left: 45%;
+}
+
+@media screen and (min-width: 680px){
+
+ul.headmenu{
+    border-top: 1px #999 solid;
+    border-bottom: 1px #999 solid;
+    display: block;
+    width: 90%;
+    margin-left: 4%;
+}
+.headmenu li{
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 50px 8px 50px;
+}
+
+}
+
+@media screen and (max-width: 680px){
+
+ul.headmenu{
+    border-top: 1px #999 solid;
+    border-bottom: 1px #999 solid;
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+}
+.headmenu li{
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 20px 8px 20px;
+}
+body .main{
+    margin-top: 250px;
+}
+
+}

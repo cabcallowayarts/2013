@@ -1,0 +1,260 @@
+html, body{
+    height: 100%;
+    top: 0%;
+    padding: 0px;
+    margin: 0px;
+}
+html *{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 1280px){
+.header ul{
+    transform: translateY(-35px);
+}
+}
+@media screen and (max-width: 1279px){
+.header ul{
+    transform: translateY(15px);
+}
+}
+
+@media screen and (min-width: 680px){
+
+.header{
+    width: 100%;
+    background-color: #FFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.header .notcentered{
+    display: none;
+}
+.header a{
+    display: inline-block;
+     margin-left: 1em;
+    margin-right: 1em;
+}
+.header img{
+    display: inline-block;
+    height: 80px;
+    width: auto;
+}
+.header ul{
+    display: inline-block;
+    -webkit-padding-start: 0px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.header ul li{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.header ul li a{
+    color: #000;
+    text-decoration: none;
+    transition: all linear .2s;
+}
+.header ul li a:hover{
+    color: #999;
+}
+.header ul li a.selected{
+    color: #999;
+}
+
+hr{
+    border: 1px #FFF solid;
+    width: 10%;
+}
+
+ul.headmenu{
+    border-top: 2px #999 solid;
+    border-bottom: 2px #999 solid;
+    display: block;
+    width: 90%;
+    margin-left: 4%;
+}
+.headmenu li{
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 50px 8px 50px;
+}
+.headmenu li a{
+    text-decoration: none;
+    color: #000;
+}
+.headmenu li a.selected{
+    color: #999;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(229, 229, 226);
+}
+.footer .logo{
+    height: 75px;
+    width: 75px;
+    margin-left: 35px;
+    margin-top: 10px;
+    display: inline-block;
+    background-image:url(../cab_logo.png);
+    background-size: 100% 100%;
+}
+.footer .logo:hover{
+    background-image:url(../cab_logo_hover.png);
+}
+.footer .submenuwrapper{
+    position: absolute;
+    right: 20%;
+    display: inline-block;
+}
+.footer .submenu{
+    display: inline-block;
+}
+.footer .submenu li{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #BBB;
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+.footer .submenu li a{
+    color: #BBB;
+    text-decoration: none;
+    transition: all linear .2s;
+}
+.footer .submenu li a:hover{
+    color: #999;
+}
+.footer .submenu li:first-child{
+    color: #000;
+}
+.footer hr.foot{
+    margin-top: 35px;
+    width: 90%;
+    margin-left: 5%;
+    border: 1px #BBB solid;
+}
+.footer .copyright{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    display: inline-block;
+}
+}
+
+@media screen and (max-width: 680px){
+
+.header{
+    width: 100%;
+    height: 100px;
+    border-bottom: #DDD solid 2px;
+}
+.header center{
+    display: none;
+}
+.header img{
+    display: block;
+    height: 60px;
+    padding-top: 20px;
+    margin: auto;
+}
+.header ul{
+    position: relative;
+    left: -320px;
+    top: -9px;
+}
+.header ul li{
+    display: block;
+    height: 30px;
+    width: 250px;
+    margin: 0px;
+    padding: 10px;
+    background-color: #FFF;
+    border-bottom: #DDD solid 2px;
+}
+.header ul li a{
+    color: #999;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+#hamburger-icon {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    display: block;
+    left: 310px;
+    top: -226px;
+}
+#hamburger-icon .line {
+  display: block;
+  background: rgb(131,158,117);
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  border-radius: 4px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+#hamburger-icon .line.line-1 {
+  top: 0;
+}
+#hamburger-icon .line.line-2 {
+  top: 50%;
+}
+#hamburger-icon .line.line-3 {
+  top: 100%;
+}
+#hamburger-icon.active .line-1 {
+  transform: translateY(15px) translateX(0) rotate(45deg);
+  -webkit-transform: translateY(15px) translateX(0) rotate(45deg);
+  -moz-transform: translateY(15px) translateX(0) rotate(45deg);
+}
+#hamburger-icon.active .line-2 {
+  opacity: 0;
+}
+#hamburger-icon.active .line-3 {
+  transform: translateY(-15px) translateX(0) rotate(-45deg);
+  -webkit-transform: translateY(-15px) translateX(0) rotate(-45deg);
+  -moz-transform: translateY(-15px) translateX(0) rotate(-45deg);
+}
+
+ul.headmenu{
+    display: none;
+}
+
+
+
+.footer .logo{
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-image: url(../cab_logo.png);
+    background-size: 100% 100%;
+    margin: 10px;
+}
+.footer .copyright{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    margin-top: 35px;
+    margin-right: 1em;
+    float: right;
+}
+.footer .submenuwrapper{
+    display: none;
+}
+.footer .submenu li:first-child{
+    color: #000;
+}
+.footer hr.foot{
+    display: none;
+}
+
+}

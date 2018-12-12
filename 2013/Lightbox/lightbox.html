@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lightbox</title>
+<link rel="stylesheet" href="lightbox.css" />
+</head>
+
+<body>
+<div id="thing"></div>
+<div id="thing2"></div>
+<div id="thing3"></div>
+<div id="cover"></div>
+<script src="lightbox.js">
+</script>
+<script>
+var clicker = document.getElementById("thing");
+var clickerTwo = document.getElementById("thing2");
+var clickerThree = document.getElementById("thing3");
+var cover = document.getElementById("cover");
+clicker.onclick = lightbox;
+clickerTwo.onclick = lightboxTwo;
+clickerThree.onclick = lightboxThree;
+cover.onclick = closeLight;
+</script>
+</body>
+</html>

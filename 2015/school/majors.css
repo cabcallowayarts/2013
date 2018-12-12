@@ -1,0 +1,49 @@
+h1{
+    font-size: 5em;
+    color: rgb(117,91,116);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+hr{
+    border: 2px rgb(117,91,116) solid;
+    width: 10%;
+}
+
+.major{
+    display: inline-block;
+    width: 440px;
+    margin: 4%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.major *{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.major .image{
+    height: 400px;
+    width: 400px;
+    background-color: #000;
+}
+.major img{
+    opacity: .8;
+    transition: .2s linear all;
+}
+.major img:hover{
+    opacity: 1;
+}
+
+.major h2{
+    color: rgb(117,91,116);
+    font-size: 2.5em;
+    height: 2em;
+}
+
+.major p{
+    text-align: justify;
+    line-height: 1.7em;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+}

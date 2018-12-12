@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Links</title>
+<link rel="stylesheet" href="styles/html.css">
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+	<a id="first" href="attributes.html">&#60;- Attributes</a>
+	<a id="last" href="what_not_to_do_html.html">What Not to Do -&#62;</a>
+</div>
+<h1>Links</h1>
+
+<div id="content">
+<p>
+In the last section, we mentioned links a little bit, but they were not explained very much. This is one of the final things you need to learn before moving on to CSS.
+</p>
+<p>
+A link is any connection with anything outside of you're current page. This can be another website, an image, or another file you need to connect to the current one. This is accomplished through three different means: the <b>href</b> and <b>src</b> attributes, and the <b>link</b> tag.
+</p>
+<p>
+To start off, we'll talk about the <b>href</b> attribute. This is used with the <b>a</b> tag, as you may have seen. This allows you to create a link on your page to another page. For example, this code:
+</p>
+<div id="code">
+&#60;a href="http://www.google.com"&#62;<br>
+Google
+<br>&#60;/a&#62;
+</div>
+<p>
+will send you to Google's homepage. This becomes quite useful when you're making menus to navigate to multiple pages on your site. However, you have to be careful, as the folder you set up in the very beginning is beginning to become useful.
+</p>
+<p>
+In web developer terms, the folder, which contains your "index.html", is called a <b>directory</b>. In a directory are files and other "sub-directories". If you do not have a "http://" prefix on the url that you provide, it will look for a file inside your directory. If you do not have that file, it will send you to a 404 page.
+</p>
+<p>
+Luckily, this can actually be pretty useful. For example, if you have a file in the same folder called "test.html", to link to it, you just use this:
+</p>
+<div id="code">
+&#60;a href="test.html"&#62;Test&#60;/a&#62;
+</div>
+<p>
+Also, if you have another folder, or sub-directory, within that folder, you can access it too. If you moved the test.html into a folder within you're main folder, and called the folder "files", to get to test.html, you would use this code:
+</p>
+<div id="code">
+&#60;a href="files/test.html"&#62;Test&#60;/a&#62;
+</div>
+<p>
+These same concepts also carry across with all other types of links. The next method we will be talking about is the <b>src</b> attribute. It works the same as the href attribute, but it works for images. For example, if you wanted to link an image called "cat.jpg" that you put in the "files" folder mentioned earlier, then you would put this into your code:
+</p>
+<div id="code">
+&#60;img src="files/cat.jpg" /&#62;
+</div>
+<p>
+The last type of link that we will be learning about is unique, but uses the href attribute in its process. This is the <b>link</b> element, and it goes into the head tag, not the body. It is used to link other files to your current one. The main application of this is to attach css files, but we will learn about that next section. Until then, here is an example. It will be fully explained in the CSS section.
+</p>
+<div id="code">
+&#60;link href="files/index.css" &#62;
+</div>
+</div>
+</div>
+</body>
+</html>

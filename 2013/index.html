@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<!--
+		Supersized - Fullscreen Slideshow jQuery Plugin
+		Version : 3.2.7
+		Site	: www.buildinternet.com/project/supersized
+
+		Author	: Sam Dunn
+		Company : One Mighty Roar (www.onemightyroar.com)
+		License : MIT License / GPL License
+	-->
+
+	<head>
+
+		<title>CCSA TSA</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+
+		<script type="text/javascript">
+
+			jQuery(function($){
+
+				$.supersized({
+
+					// Functionality
+					slide_interval          :   3000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	700,		// Speed of transition
+
+					// Components
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'img/1bw.jpg', thumb : 'img/1bw.jpg'},
+														{image : 'img/2bw.jpg', thumb : 'img/2bw.jpg'},
+														{image : 'img/3bw.jpg', thumb : 'img/3bw.jpg'},
+														{image : 'img/4bw2.jpg', thumb : 'img/4bw2.jpg'},
+														{image : 'img/5bw.jpg', thumb : 'img/5bw.jpg'}
+												]
+
+				});
+		    });
+
+		</script>
+
+	</head>
+
+	<style type="text/css">
+		ul#demo-block{ margin:0 15px 15px 15px; }
+			ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+			ul#demo-block li a{ color:#eee; font-weight:bold; }
+			@font-face{	font-family: Rockwell; src: url("Rockwell.ttf"); }
+		@font-face{	font-family: "TW Cen","TW Cen MT"; src: url("tw_cen.ttf"); }
+
+	</style>
+
+<body>
+
+	<!--Links-->
+<div id="db" class="linkstyle"><a href="designbrief.html">Design Brief</a></div>
+<div id="chap" class="linkstyle"><a href="chapter.html">Our Chapter</a></div>
+   <div id="school" class="linkstyle"><a href="school.html">Our School</a></div>
+
+	<!--Thumbnails-->
+<div id="bgcolor"></div>
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+<div id="thumb-tray" class="load-item">
+</div>
+
+    <!--Title-->
+<div id="cabtitle">CAB CALLOWAY</div>
+    <div id="tsatitle">TSA</div>
+
+    <div id="tsa"><a href="http://tsaweb.org" target="_blank"></a></div>
+
+</body>
+</html>

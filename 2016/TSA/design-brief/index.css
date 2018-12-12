@@ -1,0 +1,348 @@
+@-webkit-keyframes arrow-down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes arrow-down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes arrow-down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+@-webkit-keyframes arrow-right {
+  0%   { -webkit-transform:translateX(-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translateX(20px); opacity: 0; }
+}
+@-moz-keyframes arrow-right {
+  0%   { -moz-transform:translateX(-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translateX(20px); opacity: 0; }
+}
+@keyframes arrow-right {
+  0%   { transform:translateX(-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translateX(20px); opacity: 0; }
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    width: 100vw;
+}
+html{
+    overflow-x: hidden;
+    width: 100vw;
+}
+html body .bModal.__bPopup1{
+    display: none !important;
+}
+html body .popup{
+    display: none !important;
+}
+
+@media screen and (min-width: 800px){
+
+/* Opening Screen CSS */
+
+body{
+    overflow-y: hidden;
+    height: 100vh;
+}
+.main-screen{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(23,23,23);
+    -webkit-transition: .5s ease-in all;
+    -moz-transition: .5s ease-in all;
+    transition: .5s ease-in all;
+}
+.main-screen .drone-header{
+    display: block;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    -webkit-transition: .5s ease-in all;
+    -moz-transition: .5s ease-in all;
+    transition: .5s ease-in all;
+}
+.main-screen .arrow{
+    display: block;
+    height: auto;
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    bottom: 25%;
+    -webkit-transition: .5s ease-in all;
+    -moz-transition: .5s ease-in all;
+    transition: .5s ease-in all;
+    -webkit-animation: arrow-down 2s ease-in-out infinite;
+	-moz-animation: arrow-down 2s ease-in-out infinite;
+	animation: arrow-down 2s ease-in-out infinite;
+    cursor: pointer;
+}
+
+/* Body Section CSS */
+
+.main-container{
+    width: 100%;
+    background-color: #EEE;
+    margin-top: 100px;
+}
+.main-container section{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+.main-container section a{
+    text-decoration: none;
+}
+.main-container section h1{
+    font-family: "neutraface-2-text-lf",sans-serif;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 32vh;
+    font-size: 12vh;
+    line-height: 18vh;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.main-container section h2{
+    font-family: "neutraface-2-text-lf",sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.main-container section a .left-arrow{
+    -webkit-transition: .2s linear all;
+    -moz-transition: .2s linear all;
+    transition: .2s linear all;
+}
+.main-container section a:hover .left-arrow{
+    -webkit-animation: arrow-right 2s ease-in-out infinite;
+	-moz-animation: arrow-right 2s ease-in-out infinite;
+	animation: arrow-right 2s ease-in-out infinite;
+}
+
+/* Section Background Images */
+
+.main-container .future{
+    background-image: url(future.png);
+    background-color: #FFF;
+}
+.main-container .commercial{
+    background-image: url(commercial.png);
+    background-color: rgb(118,147,164);
+}
+.main-container .educational{
+    background-image: url(educational.jpg);
+}
+.main-container .research{
+    background-image: url(research.jpg);
+}
+
+/* Section-Specific CSS */
+
+.main-container section.future h1{
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    margin-top: 24vh;
+    font-size: 16vh;
+    font-weight: 600;
+    color: #333;
+}
+.main-container section.future span{
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 300;
+    color: #333;
+    letter-spacing: 2px;
+    font-style: italic;
+    transform: translateY(-25%);
+}
+.main-container section.future .left-arrow{
+    height: .75em;
+    width: auto;
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.main-container section.commercial h1{
+    color: #333;
+}
+.main-container section.commercial h2{
+    color: #FFF;
+}
+
+.main-container section.educational h1{
+    color: #FFF;
+}
+.main-container section.educational h2{
+    color: #333;
+}
+
+.main-container section.research h1{
+    color: #FFF;
+}
+.main-container section.research h2{
+    color: #FFF;
+}
+
+}
+
+
+/* Mobile CSS */
+
+
+@media screen and (max-width: 800px){
+
+/* Opening Screen CSS */
+
+.main-screen{
+    display: none;
+}
+header{
+    opacity: 1 !important;
+}
+
+/* Body Section CSS */
+
+.main-container{
+    width: 100%;
+    background-color: #EEE;
+    margin-top: 100px;
+}
+.main-container section{
+    height: 50vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+.main-container section a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 35%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.main-container section h1{
+    font-family: "neutraface-2-text-lf",sans-serif;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    line-height: 1.2em;
+    margin-top: 10%;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.main-container section h2{
+    font-family: "neutraface-2-text-lf",sans-serif;
+    text-align: center;
+    padding: 0px;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 1em;
+    font-size: 24px;
+    width: 90%;
+    margin: 5%;
+}
+.main-container section a .left-arrow{
+    display: none;
+}
+
+/* Section Background Images */
+
+.main-container .future{
+    background-image: url(future.png);
+    background-color: #FFF;
+}
+.main-container .commercial{
+    background-image: url(commercial.png);
+    background-color: rgb(118,147,164);
+}
+.main-container .educational{
+    background-image: url(educational.jpg);
+}
+.main-container .research{
+    background-image: url(research.jpg);
+}
+
+/* Section-Specific CSS */
+
+.main-container section.future h1{
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 0%;
+}
+.main-container section.future span{
+    display: block;
+    font-size: 32px;
+    font-weight: 300;
+    color: #333;
+    letter-spacing: 2px;
+    font-style: italic;
+    margin-top: .5em;
+}
+.main-container section.future .left-arrow{
+    display: none;
+}
+
+.main-container section.commercial h1{
+    color: #333;
+    text-shadow: 0px 0px 20px #DDD;
+}
+.main-container section.commercial h2{
+    color: #FFF;
+    text-shadow: 0px 0px 20px #333;
+}
+
+.main-container section.educational h1{
+    color: #FFF;
+    text-shadow: 0px 0px 20px #333;
+}
+.main-container section.educational h2{
+    color: #FFF;
+    text-shadow: 0px 0px 20px #333;
+}
+
+.main-container section.research h1{
+    color: #FFF;
+    text-shadow: 0px 0px 20px #333;
+}
+.main-container section.research h2{
+    color: #FFF;
+    text-shadow: 0px 0px 20px #333;
+}
+
+}

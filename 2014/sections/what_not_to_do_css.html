@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="styles/css.css">
+<title>What Not to Do</title>
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+	<a id="first" href="ids_and_classes.html">&#60;- Id's and Classes</a>
+	<a id="last" href="references_css.html">References -&#62;</a>
+</div>
+<h1>What Not to Do</h1>
+
+<ul id="main">
+	<li>
+	<b id="header">Inline CSS</b>
+	<br>
+	<p>
+	If you look more in-depth in CSS, there are three main ways that you can use it: inline, in-document, and embedded. As you probably saw in the title, the one of these that you want to avoid is inline. Of course, you need to know what you're looking for before you know to avoid it, so here's an example:
+	</p>
+	<div id="code">
+	&#60;p style="color:red;font-size:16px;width:100%;"&#62;Hello World&#60;/p&#62;
+	</div>
+	<p>
+	The way this works is that an element gets a new attribute, the <b>style</b> attribute, and it's value is set to CSS, with each style being separated by semicolons. This seems harmless at first, but when applied to a large-scale project, it becomes a horrible, un-expandable mess of code that no one will want to touch. The two acceptable ways of embedding CSS into a webpage are in the styles tags, like this, in the head tag:
+	</p>
+	<div id="code">
+	&#60;style&#62;
+	p{<br>
+		color: red;<br>
+	}
+	&#60;/style&#62;
+	</div>
+	<p>
+	Or in a separate file, and then embedded using the <b>link</b> tag in the head tag, like this:
+	</p>
+	<div id="code">
+	&#60;link rel="stylesheet" href="index.css"&#62;
+	</div>
+	</li>
+
+	<li>
+	<b id="header">Using the measurements pc, in, cm, or any real-world measurement</b>
+	<p>
+	This one may seem a bit weird at first, but this rule becomes very, very important once you start designing for the real world. These measurements, <b>pc (picas)</b>, <b>in(inches)</b>, and <b>cm(centimeters)</b>, were developed in the 20th century, when most screens were pretty much the same size, and you could get away with giving exact measurements. Nowadays, with the rise of laptops, phones, and tablets, screen sizes can vary from 3 inches to 27 inches, and you can't use the same measurement for both. Currently, the same measurements, which I have used so far, are <b>px (pixels)</b> and <b>% (percent)</b>, though even pixels can become a bit risky if you are designing large elements. There are some other measurements out there, such as <b>em</b>, which are acceptable, but if you can measure it with a ruler, it is best to not use it.
+	</p>
+	</li>
+</ul>
+</div>
+</body>
+</html>

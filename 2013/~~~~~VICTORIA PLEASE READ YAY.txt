@@ -1,0 +1,25 @@
+VICTORIA: HI(:
+
+CHAPTER
+.Can you add a pic to the top? I'll give you the file after school
+.The titles on the chapter page still disappear behind the text box when the screen is big
+.DON"T WORRY ABOUT THIS(: but The media queries on the chapter page @ 320 px wide are messed up, but i think we're good not fixing it
+.Can you line the "web team" up with the left bottom side of the picture instead of the right? And add right arrow?
+.THANK YOU FOR THE FUNDRAISING SETION(:
+.The motto "Learning to Live in a Technical World" goes into the text box when the screen is small
+.If Karl isn't here, can you take off the lightbox? We'll go without it
+.Take off black bars on "past" images
+
+SCHOOL
+.Can you add a pic to the top? I'll give you the file after school
+.Can the three lab picture be the same width as the text box below it & Add margins?
+.On the "Arts Pathways" section, can you get rid of the tiny picture thumbnails and put in a creative writing section?
+
+INDEX
+.Can you embed the two fonts (rockwell, tw cen mt) on the page if you have time? If not I can figure out how to do it, let me know!!
+
+
+WHAT I HAVE TO DO
+.Pictures in DM/ARTS pages
+.Attach 2 promo posters & video
+.Write more about the chapter

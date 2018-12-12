@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="styles/css.css">
+<title>Beginning CSS</title>
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+	<a id="last" href="box_model.html">Box Model -&#62;</a>
+</div>
+<h1>Beginning CSS</h1>
+<div id="content">
+<p>
+To get started with CSS, it's best to show you what sort of thing you will be learning. So, below, I will show you a bit of code:
+</p>
+<div id="code">
+	p{<br>
+		color: red;<br>
+		font-size: 16px;<br>
+		width: 100%;<br>
+	}
+</div>
+<p>
+This is just a small look into what you will be learning in this section. This may seem a bit strange to look at initially, but once you know what all of the parts mean, you'll be able to write this yourself, and even visualize what it will look like.
+</p>
+<img src="images/css_syntax.png" />
+<p>
+First off, we'll start with the p in the top left. You will recognize this from HTML, the paragraph element. This is intentional, as this is known as a selector. This means that this section of code will be editing all p elements. You can narrow this down to specific elements, but we will learn that later. After this, we have a curly bracket. This always immediately follows the selector, though it can go on the next line if you prefer. The segment of code ends with another curly bracket, and this tells the computer that after this, the code no longer affects the p elements. That is when you can start another segment of code, this time editing a div element, perhaps.
+</p>
+<p>
+In between the curly brackets, however, is where the true power of CSS lies. These are the individual styles, and they are what determines how the element looks. Each line affects a different part of the element. I'll explain the ones given, but there will be many more in the next section. First off, you will notice that there is a word, a colon, some text, and then a semicolon. The first world is the style that is affected, such as color, which affects the color of the text. After that, the color separates the style from it's value. After that is the value, which is 'red' for the color. This is what tells the computer what do set the style to. In the first case, it sets the color of the text to red. After that, there is a semicolon. The semicolon is a habit that was carried over from more complicated code, where every line of code had to end with a semicolon. <i>It is still used in CSS and it is crucial to put it at the end of every line, as browsers require it to tell lines apart.</i>
+</p>
+<p>
+Now that you have had the structure laid out, you can now figure out what the other lines of code mean. The second line is setting the size of the font to sixteen pixels, and the third is setting the width of the element to 100% the width of the element that is containing it.
+</p>
+<p>
+Now that you know how CSS works, you need to know where to put it. This, luckily, is prettyt simple. For now, we will put it in a new tag in the header, the <b>style</b> tag. This is relatively self explanatory, but we'll show you a little code sample.
+</p>
+<div id="code">
+&#60;!DOCTYPE html&#62;<br>
+&#60;html&#62;<br>
+<br>
+	&#60;head&#62;<br>
+	&#60;style&#62;<br>
+	p{<br>
+		color: red;<br>
+		font-size: 16px;<br>
+		width: 100%;<br>
+	}<br>
+    &#60;/style&#62;<br>
+    &#60;/head&#62;<br>
+    <br>
+    &#60;body&#62;<br>
+    &#60;p&#62;Hello there!&#60;/p&#62;<br>
+    &#60;/body&#62;<br>
+    <br>
+    &#60;/html&#62;<br>
+</div>
+</div>
+</div>
+</body>
+</html>

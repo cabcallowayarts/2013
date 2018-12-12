@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>E-Waste - Solutions</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="solutions.css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="header">
+    <center>
+    <a href="home.html"><img src="ewaste_title.png" /></a>
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="devices.html">DEVICES</a></li>
+        <li><a class="selected" href="solutions.html">SOLUTIONS</a></li>
+    </ul>
+    </center>
+
+    <div class="notcentered">
+    <img src="ewaste_title.png" />
+    <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="devices.html">DEVICES</a></li>
+        <li><a href="solutions.html">SOLUTIONS</a></li>
+
+        <a id="hamburger-icon">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+    </a>
+
+    </ul>
+    </div>
+</div>
+
+<h1>LOCAL SOLUTIONS</h1>
+
+<div class="icon">
+    <img src="solution_icons/sites.png" />
+</div>
+
+<p>One of the most important aspects of e-recycling is knowing where to recycle your devices. Luckily, there are many websites from multiple sources that allow you to find the e-recycling center closest to you.</p>
+
+<div class="links">
+    <center>
+    <a target="_blank" href="http://www.ecyclingcentral.com/">E-CYCLING</a>
+    <a target="_blank" href="http://www.epa.gov/epawaste/conserve/materials/ecycling/donate.htm">EPA</a>
+    <a target="_blank" href="http://search.earth911.com/">EARTH911</a>
+    </center>
+</div>
+
+<hr>
+
+<div class="icon">
+    <img src="solution_icons/more.png" />
+</div>
+
+<p>If you want to read up some more on the intricacies of e-waste and e-recycling, here are some sources that we used.</p>
+
+<div class="links">
+    <center>
+    <a target="_blank" href="http://www.chemistryviews.org/details/ezine/1037973/Major_Threats_From_E-Waste_Current_Generation_And_Impacts.html">MAJOR THREATS</a>
+    <a target="_blank" href="www.bostonelectronicwaste.com/go-green/what-is-ewaste">WHAT IS E-WASTE</a>
+    <a target="_blank" href="http://www.greencitizen.com/learn-more/harmful-effects/">HARMFUL EFFECTS</a>
+    <a target="_blank" href="https://www.dosomething.org/facts/11-facts-about-e-waste">11 FACTS</a>
+    <a target="_blank" href="http://www.calrecycle.ca.gov/ReduceWaste/Batteries/">BATTERIES</a>
+    <a target="_blank" href="http://www.livescience.com/13840-7-everyday-toxic-items-recycle.html">7 TOXIC ITEMS</a>
+    </center>
+</div>
+
+<div class="footer">
+    <a href="../index.html"><div class="logo"></div></a>
+    <div class="submenuwrapper">
+
+        <ul class="submenu">
+            <li>SCHOOL</li>
+            <li><a href="../school/school.html">ABOUT</a></li>
+            <li><a href="../school/school_pathways.html">CAREER PATHWAY</a></li>
+            <li><a href="../school/school_majors.html">MAJORS</a></li>
+        </ul>
+
+        <ul class="submenu">
+            <li>CHAPTER</li>
+            <li><a href="../chapter/chapter.html">OFFICERS</li>
+            <li><a href="../chapter/chapter_fundraising.html">FUNDRAISING</a></li>
+            <li><a href="../chapter/chapter_past.html">PAST</a></li>
+        </ul>
+
+        <ul class="submenu">
+            <li>DESIGN BRIEF</li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="devices.html">DEVICES</a></li>
+            <li><a href="solutions.html">SOLUTIONS</a></li>
+        </ul>
+
+    </div>
+
+    <hr class="foot">
+
+    <span class="copyright">&#169;2015 CAB CALLOWAY TSA</span>
+
+</div>
+
+<script src="jquery.js"></script>
+<script>
+    var isExtended = false;
+   $(document).ready(function() {
+  var hamburger = $('#hamburger-icon');
+  var list = $('.header ul');
+  hamburger.click(function() {
+    hamburger.toggleClass('active');
+    if(isExtended){
+        list.animate({ left: "-320px"} , 200);
+        hamburger.animate({ left: "310px"} , 200);
+        isExtended = false;
+    }else{
+        list.animate({ left: "-40px"} , 200);
+        hamburger.animate({ left: "30px"} , 200);
+        isExtended = true;
+    }
+    return false;
+  });
+});
+</script>
+
+</body>
+</html>

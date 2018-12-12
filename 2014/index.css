@@ -1,0 +1,402 @@
+@-webkit-keyframes backgroundShift{
+	0%{
+		background-position: 10% 10%;
+		background-size: 120% 120%
+	}
+	50%{
+		background-position: 0% 0%;
+		background-size: 100% 100%
+	}
+	100%{
+		background-position: 10% 10%;
+		background-size: 120% 120%
+	}
+}
+@-moz-keyframes backgroundShift{
+	0%{
+		background-position: 10% 10%;
+		background-size: 120% 120%
+	}
+	50%{
+		background-position: 0% 0%;
+		background-size: 100% 100%
+	}
+	100%{
+		background-position: 10% 10%;
+		background-size: 120% 120%
+	}
+}
+@-keyframes backgroundShift{
+	0%{
+		background-position: 10% 10%;
+		background-size: 120% 120%
+	}
+	50%{
+		background-position: 0% 0%;
+		background-size: 100% 100%
+	}
+	100%{
+		background-position: 10% 10%;
+		background-size: 120% 120%
+	}
+}
+@font-face
+{
+	font-family: BebasNeue;
+	src: url(BebasNeue.otf), url(BebasNeue.ttf);
+}
+@font-face
+{
+	font-family: PTSerif;
+	src: url(pt_serif.ttf), url(pt_serif.otf);
+}
+div#overlay{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	/* NO ONE TOPS ME!!! I AM GOD!!! */
+	z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+
+	background-color: #FFF;
+	-webkit-transition: opacity 1s linear;
+}
+div#giantImg{
+	background-image: url(introImg/introImg1.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	opacity: .8;
+}
+h1#giantText{
+	font-family: BebasNeue;
+	font-size: 10em;
+	color: #FFF;
+	margin: 0px;
+}
+@media (min-device-width: 801px),(min-width:801px){
+body{
+	overflow: hidden;
+}
+div#bgContainer{
+	background-color: #000;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+}
+#bgContainer div{
+	-webkit-transition: 20s linear all;
+	-moz-transition: 20s linear all;
+	transition: 20s linear all;
+	height: 35px;
+	position: absolute;
+}
+div#giantImg{
+	background-size: 100% 100%;
+	-webkit-animation: backgroundShift;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transition: all 1s linear;
+	-moz-animation: backgroundShift;
+	-moz-animation-duration: 20s;
+	-moz-animation-iteration-count: infinite;
+	-moz-transition: all 1s linear;
+	animation: backgroundShift;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	transition: all 1s linear;
+}
+h1#giantText{
+	position: absolute;
+	right: 50px;
+	bottom: 10px;
+}
+#header{
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 5%;
+	background-color: #111;
+	z-index: 4;
+	box-shadow: 0px 0px 5px #000;
+	min-height: 3em;
+}
+#header #search{
+	position: fixed;
+	font-size: 1.8em;
+	right: 5%;
+	width: 20%;
+	background-color: #DDD;
+	border: none;
+	font-family: BebasNeue;
+	display: block;
+	border-radius: .9em;
+	outline: none;
+	padding: 2px;
+	padding-left: 10px;
+}
+#header #searches{
+	position: fixed;
+	right: 5%;
+	top: 3%;
+	width: 20%;
+}
+#searches li{
+	color: #FFF;
+	font-size: 1.5em;
+	font-family: BebasNeue;
+	list-style: none;
+	display: block;
+	height: auto;
+	border-right: none;
+	padding-left: 0%;
+	padding-right: 0%;
+	padding: 1%;
+	margin-top: 0%;
+	cursor: pointer;
+	border-bottom: 1px #FFF solid;
+}
+#searches li a:hover{
+	text-decoration: none;
+}
+#headerLinks a{
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	margin-top: 3%;
+}
+#header #headerLinks{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#header li#last{
+	border-right: none;
+}
+#headerLinks li#first a{
+	color: #63B8FF;
+	cursor: pointer;
+}
+#headerLinks li#last a{
+	color: #999;
+	cursor: pointer;
+}
+#headerLinks li#first a:hover, #headerLinks li#last a:hover{
+	color: #63B8FF;
+}
+#headerLinks li{
+	color: #FFF;
+	font-size: 2em;
+	font-family: BebasNeue;
+	list-style: none;
+	display: inline-block;
+	height: 80%;
+	border-right: 1px #DDD solid;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+#headerLinks li a:hover{
+	color: #63B8FF;
+}
+#sidebar{
+	position: absolute;
+	left: 0%;
+	top: 5%;
+	width: 25%;
+	height: 100%;
+	z-index: 3;
+	box-shadow: 0px 0px 10px #000;
+}
+#sidebar div{
+	display: block;
+	width: 100%;
+	height: 25%;
+	margin: 0px;
+	padding: 0px;
+	background-size: 100% 100%;
+}
+#peek{
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	height: 95%;
+	width: 0%;
+	background-color: #000;
+	z-index: 2;
+	transition: all .1s ease-in;
+	box-shadow: 0px 0px 10px #000;
+}
+#main{
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	width: 80%;
+	height: 95%;
+	background-color: #FFF;
+	border: none;
+	z-index: 1;
+}
+#comp{
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	width: 80%;
+	height: 95%;
+	background-color: #333;
+	border: none;
+	z-index: 1;
+	display: none;
+}
+#overlay #fakeHeader{
+	height: 10%;
+	width: 100%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	background-color: #000;
+	color: #000;
+}
+#overlay #fakeMain{
+	width: 85%;
+	height: 90%;
+	position: absolute;
+	left: 15%;
+	top: 10%;
+}
+#fakeMain h1{
+	font-family: BebasNeue;
+	text-align: center;
+	margin-top: 5%;
+	font-size: 7em;
+}
+#overlay #fakeSidebar{
+	height: 90%;
+	width: 15%;
+	position: absolute;
+	left: 0%;
+	top: 10%;
+	background-color: #333;
+	color: #333;
+}
+}
+@media (max-device-width: 800px),(max-width:800px){
+div#giantImg{
+	background-size: auto 100%;
+}
+h1#giantText{
+	text-align: center;
+	margin-top: 10px;
+}
+#header{
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 10%;
+	background-color: #111;
+	z-index: 4;
+	box-shadow: 0px 0px 10px #000;
+}
+#searches, #header #search, #peek, #headerLinks #last{
+ 	display: none;
+}
+#header a{
+	text-decoration: none;
+}
+#searches li{
+	list-style: none;
+	cursor: pointer;
+	height: 1.3em;
+	padding: .2em;
+	font-family: PTSerif, Georgia, "Times New Roman", Times, serif;
+}
+#header #headerLinks{
+	width: 100%;
+}
+#headerLinks li{
+	width: 20%;
+	border-right: none;
+}
+#sidebar{
+	position: fixed;
+	left: 0%;
+	top: 10%;
+	height: 20%;
+	width: 100%;
+	background-color: #000;
+	z-index: 3;
+	box-shadow: 0px 0px 10px #000;
+}
+#sidebar div{
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	margin: -2px;
+	padding: 0px;
+	background-size: 100% 100%;
+}
+#sidebar #html{
+	background-image: url(sidebar/html.png);
+}
+#sidebar #css{
+	background-image: url(sidebar/css.png);
+}
+#sidebar #design{
+	background-image: url(sidebar/design.png);
+}
+#sidebar #tech{
+	background-image: url(sidebar/tech.png);
+}
+#main{
+	position: fixed;
+	left: 0%;
+	top: 30%;
+	width: 100%;
+	height: 70%;
+	background-color: #FFF;
+	border: none;
+	z-index: 1;
+}
+#overlay #fakeHeader{
+	height: 10%;
+	width: 100%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	background-color: #000;
+	color: #000;
+}
+#overlay #fakeMain{
+	width: 100%;
+	height: 70%;
+	position: absolute;
+	left: 0%;
+	top: 30%;
+}
+#fakeMain h1{
+	font-family: BebasNeue;
+	text-align: center;
+	margin-top: 5%;
+	font-size: 5em;
+}
+#overlay #fakeSidebar{
+	height: 20%;
+	width: 100%;
+	position: absolute;
+	left: 0%;
+	top: 10%;
+	background-color: #333;
+	color: #333;
+}
+}

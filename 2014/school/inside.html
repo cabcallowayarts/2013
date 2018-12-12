@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>An Inside Look</title>
+<style>
+@font-face
+{
+	font-family: BebasNeue;
+	src: url(BebasNeue.otf), url(BebasNeue.ttf);
+}
+@font-face
+{
+	font-family: PTSerif;
+	src: url(pt_serif.ttf), url(pt_serif.otf);
+}
+h1#title{
+	font-family: BebasNeue;
+	color: #333;
+	font-size: 8em;
+	letter-spacing: .1em;
+	margin: 2%;
+	padding: 0%;
+}
+div#gridContainer{
+	height: 80%;
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	top: 20%;
+}
+#gridContainer div{
+	width: 20%;
+	height: 40%;
+	display: inline-block;
+	background-color: #999;
+	margin: 1%;
+	background-size: 100% 100%;
+}
+</style>
+</head>
+
+<body>
+<h1 id="title">An Inside Look</h1>
+<div id="gridContainer">
+<div style="background-image: url(inside/1.jpg)"></div>
+<div style="background-image: url(inside/2.jpg)"></div>
+<div style="background-image: url(inside/3.jpg)"></div>
+<div style="background-image: url(inside/4.jpg)"></div>
+<div style="background-image: url(inside/5.jpg)"></div>
+<div style="background-image: url(inside/6.jpg)"></div>
+<div style="background-image: url(inside/7.jpg)"></div>
+<div style="background-image: url(inside/8.jpg)"></div>
+<div style="background-image: url(inside/9.jpg)"></div>
+</div>
+
+<script>
+var gridImages = document.getElementById("gridContainer").getElementsByTagName("div");
+for(var i=0;i<gridImages.length;i++){
+	var imgHeight = gridImages[0].offsetHeight;
+	gridImages[i].style.width = imgHeight + "px";
+}
+</script>
+</body>
+</html>

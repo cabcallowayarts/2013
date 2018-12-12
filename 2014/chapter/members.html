@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chapter Members</title>
+<style>
+@font-face
+{
+	font-family: BebasNeue;
+	src: url(BebasNeue.otf), url(BebasNeue.ttf);
+}
+@font-face
+{
+	font-family: PTSerif;
+	src: url(pt_serif.ttf), url(pt_serif.otf);
+}
+#title{
+	font-family: BebasNeue;
+	color: #333;
+	font-size: 8em;
+	max-height: 20%;
+	overflow: hidden;
+	letter-spacing: .1em;
+	margin: 0%;
+	padding: 0%;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+}
+div#images{
+	position: absolute;
+	left: 60%;
+	top: 5%;
+	width: 35%;
+	height: 90%;
+}
+div#mainImg{
+	width: 80%;
+	height: 70%;
+	position: absolute;
+	left: 10%;
+	top: 25%;
+	background-color: #474337;
+	background-image: none;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	-webkit-transition: all linear 1s;
+	-moz-transition: all linear 1s;
+	transition: all linear 1s;
+}
+#mainImg h1{
+	font-family: BebasNeue;
+	color: #FFF;
+	font-size: 5em;
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	margin: 0px;
+	padding: 0px;
+}
+div#officers{
+	position: absolute;
+	bottom: 6%;
+	left: 10%;
+	height: 20%;
+	width: 80%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,.4);
+}
+#officers div{
+	margin: 1%;
+	height: 90%;
+	width: 13%;
+	display: inline-block;
+	background-color: #999;
+	background-size: 100% 100%;
+}
+</style>
+</head>
+
+<body>
+<h1 id="title">Officers</h1>
+
+<div id="mainImg">
+	<h1>Officers</h1>
+</div>
+
+<div id="officers">
+<div style="background-image: url(officers/adam.jpg)" onmouseover="changeMain('adam')"></div>
+<div style="background-image: url(officers/christian.jpg)" onmouseover="changeMain('christian')"></div>
+<div style="background-image: url(officers/emily.jpg)" onmouseover="changeMain('emily')"></div>
+<div style="background-image: url(officers/julia.jpg)" onmouseover="changeMain('julia')"></div>
+<div style="background-image: url(officers/reilly.jpg)" onmouseover="changeMain('reilly')"></div>
+</div>
+
+<script>
+var main = document.getElementById("mainImg");
+function changeMain(person){
+	var position;
+	main.style.backgroundImage = "url(officers/" + person + ".jpg)";
+	switch(person){
+		case "adam":
+			position = "Sgt. of Arms";
+			break;
+		case "christian":
+			position = "Treasurer";
+			break;
+		case "emily":
+			position = "Vice President";
+			break;
+		case "julia":
+			position = "Secretary";
+			break;
+		case "reilly":
+			position = "President";
+			break;
+	}
+	main.getElementsByTagName("h1")[0].innerHTML = person + " - " + position;
+}
+
+var officerImages = document.getElementById("officers").getElementsByTagName("div");
+for(var i=0;i<officerImages.length;i++){
+	var imgHeight = officerImages[0].offsetHeight;
+	officerImages[i].style.width = imgHeight + "px";
+}
+</script>
+
+</body>
+</html>

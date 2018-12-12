@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chapter Members</title>
+<style>
+@-webkit-keyframes moveBg{
+	0%{
+		background-position: 0% 0%;
+	}
+	50%{
+		background-position: 50% 50%;
+	}
+	100%{
+		background-position: 0% 0%;
+	}
+}
+@-moz-keyframes moveBg{
+	0%{
+		background-position: 0% 0%;
+	}
+	50%{
+		background-position: 50% 50%;
+	}
+	100%{
+		background-position: 0% 0%;
+	}
+}
+@keyframes moveBg{
+	0%{
+		background-position: 0% 0%;
+	}
+	50%{
+		background-position: 50% 50%;
+	}
+	100%{
+		background-position: 0% 0%;
+	}
+}
+@font-face
+{
+	font-family: BebasNeue;
+	src: url(BebasNeue.otf), url(BebasNeue.ttf);
+}
+@font-face
+{
+	font-family: PTSerif;
+	src: url(pt_serif.ttf), url(pt_serif.otf);
+}
+#title{
+	font-family: BebasNeue;
+	color: #333;
+	font-size: 8em;
+	max-height: 20%;
+	letter-spacing: .1em;
+	margin: 0%;
+	padding: 0%;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+}
+div#images{
+	position: absolute;
+	left: 60%;
+	top: 5%;
+	width: 35%;
+	height: 90%;
+}
+div#mainImg{
+	width: 80%;
+	height: 70%;
+	position: absolute;
+	left: 10%;
+	top: 25%;
+	background-color: #999;
+	background-size: 200% auto;
+	-webkit-animation: moveBg;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation: moveBg;
+	-moz-animation-duration: 20s;
+	-moz-animation-iteration-count: infinite;
+	animation: moveBg;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+#mainImg div{
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	height: 63%;
+	width: 96%;
+	padding: 2%;
+	overflow-y: scroll;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+}
+#mainImg h1{
+	font-family: BebasNeue;
+	letter-spacing: .1em;
+	font-size: 5em;
+	text-align: center;
+	color: #FFF;
+	margin: 1%;
+}
+#mainImg p{
+	font-family: PTSerif, Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	color: #FFF;
+}
+div#officers{
+	position: absolute;
+	bottom: 5%;
+	left: 10%;
+	height: 20%;
+	background-color: rgba(0,0,0,.5);
+	width: 80%;
+	overflow: hidden;
+}
+#officers div{
+	width: 12%;
+	padding-bottom: 3%;
+	margin-top: 2%;
+	display: inline-block;
+	background-color: #999;
+	background-size: 100% 100%;
+	-webkit-transition: .2s linear all;
+	-moz-transition: .2s linear all;
+	transition: .2s linear all;
+}
+#officers div:hover{
+	margin: 2%;
+}
+#officers div p{
+	font-family: BebasNeue;
+	color: #FFF;
+	font-size: 1.6em;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<h1 id="title">Arts</h1>
+
+<div id="mainImg">
+<div>
+<h1></h1>
+<p>
+</p>
+</div>
+</div>
+
+<div id="officers">
+<center>
+<div style="background-image:url(arts/arts_comm.jpg)" onmouseover="changeMain('comm')"><p>Comm. Arts</p></div>
+<div style="background-image:url(arts/arts_dance.jpg)" onmouseover="changeMain('dance')"><p>Dance</p></div>
+<div style="background-image:url(arts/art_drama.jpg)" onmouseover="changeMain('drama')"><p>Drama</p></div>
+<div style="background-image:url(arts/art_instrum.jpg)" onmouseover="changeMain('instrumental')"><p>Instrum.</p></div>
+<div style="background-image:url(arts/art_vis.jpg)" onmouseover="changeMain('visual')"><p>Visual</p></div>
+<div style="background-image:url(arts/art_vocal.png)" onmouseover="changeMain('vocal')"><p>Vocal</p></div>
+</center>
+</div>
+
+<script>
+var main = document.getElementById("mainImg");
+var textArray = new Array();
+textArray[0] = "Before students majoring in the art of dance get to show off their moves on stage, an immense amount of work goes on in Cab Calloway's two dance studios. This department focuses on teaching and training in different dance techniques, including ballet, jazz, and hip-hop. Dancers are instructed on different levels throughout the years to structure their talents and allow them to continuously improve. Students are also able to study the history of dance and the health and anatomy behind the art. Many shows and performances here at Cab include our talented dancers to showcase their hard work and creativity.";
+textArray[1] = "The Vocal Music department introduces students to the fundamentals of singing and ear training. It teaches them proper vocal techniques and the different elements of music. Students will be exposed to a variety of music genres and languages, all to hone their talents and expand their range of experience. Students are also offered many opportunities to join different choruses that sing at concerts, professional gigs, and many other events. The Jazz Chords of Calloway and the musical theater group are among the many renowned groups within this program, open to not only CCSA vocalists, but any student who expresses interest in the vocal arts."
+textArray[2] = "The Visual Arts department is the best in the area, offering students expert instruction and creative freedom. Building a foundation with the elements of art and principles of design, artists grow to become proficient in many areas of art, from painting, to print making, to charcoal. Someone can walk into the art studio at any given time to find numerous students deeply engulfed in their latest art piece and covered in charcoal and paint. Many go on to succeed in Cab Calloway's exemplary Advanced Placement Studio Art class or sweep the state's Scholastic Art Awards. The glass art gallery in CCSA's lobby, when it's not housing national art exhibits, showcases students' work.";
+textArray[3] = "The Theatre Arts department is a popular program among students. Those who have an interest in theatre are able to grow immensely in their talent and their love for the art. This program gives them all the basics to help them in the real world, offering classes like theater business and audition techniques. It provides a platform if they choose to pursue a theatrical career in the future, while simultaneously offering a pathway for students who are interested in acting as a passion rather than a career. Students are taught different acting techniques, how to direct, the different methods of character development, and more. They also get to show of their talents in many different performances and shows here at Cab. This year, students presented the play, 'Almost Maine,' and the musical, 'Les Miserables,' both incredible undertakings and executed to perfection.";
+textArray[4] = "The Instrumental Music department teaches students music composition, musical theory, harmonization, and the history of music. It gives students an outlet to express themselves through the creation of music. It offers young musicians a variety of genre choices, ranging from strings, to steel drums, to piano, and to orchestra. If a student expresses a particular interest, they'll have no trouble finding a music group that both includes it and excels in it. Most instrumental students join and enjoy being members of Cab Calloway's Chapter 9 Champions Marching Band, a group that fosters team work, community, and an appreciation for hard work and dedication.";
+textArray[5] = "On top of the digital media aspect, the Communication Arts department is also devoted to and designed for students who would like to explore and learn the different types of writing. From poetry, to fiction, to comic books, students get to study all of the different styles of writing, getting the opportunity to pour their creativity out on paper. Writers are given the opportunity to share and present their work to programs such as the Scholastics Art and Writing Awards and a student-run literary magazine. They will leave the program having a better understanding of the development and process of writing, skills that are bound to help them in future endeavors.";
+function changeMain(art){
+	var mainTxt
+	main.style.backgroundImage = "url(arts/" + art + ".jpg)";
+	main.getElementsByTagName("h1")[0].innerHTML = art;
+	switch(art){
+		case "comm":
+			mainTxt = textArray[5];
+			break;
+		case "dance":
+			mainTxt = textArray[0];
+			break;
+		case "drama":
+			mainTxt = textArray[3];
+			break;
+		case "instrumental":
+			mainTxt = textArray[4];
+			break;
+		case "visual":
+			mainTxt = textArray[2];
+			break;
+		case "vocal":
+			mainTxt = textArray[1];
+			break;
+	}
+	main.getElementsByTagName("p")[0].innerHTML = mainTxt;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beginning HTML</title>
+<link rel="stylesheet" href="styles/html.css">
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<a id="last" href="more_elements.html">More Elements -&#62;</a>
+</div>
+<h1>Beginning HTML</h1>
+
+<div id="content">
+<p>
+Welcome to the first part of your journey into coding! In this first section, we will be going over the code that you used on the home page.
+</p>
+<div id="code">
+	&#60;!DOCTYPE html&#62;<br>
+	&#60;html&#62;<br>
+	&#60;head&#62;<br>
+	&#60;title&#62;Hello World&#60;/title&#62;<br>
+	&#60;/head&#62;<br>
+	<br>
+	&#60;body&#62;<br>
+	&#60;h1&#62;This is my first website!&#60;/h1&#62;<br>
+	&#60;/body&#62;<br>
+	<br>
+	&#60;/html&#62;
+</div>
+<p>
+This may look foreign if you've never used HTML before, but you may notice patterns. First off, there are multiple bits of text in between the less than (&#60;) character, and the greater than (&#62;) character. For simplicity's sake, from now on we'll can them <b>tags</b>.
+</p>
+<p>
+However, for most tags, there are two types. You will notice that for each normal segment (&#60;title&#62;), there is an opposite one (&#60;/title&#62;). The first one is called an opening tag, and the second is a closing tag. Together, they form an <b>element</b>. An element is a box where you can store a bunch of content. This is how a website is made up.
+</p>
+<p>
+However, you can not just place these boxes wherever you want to and create a webpage. There is a concept called <b>document structure</b> that determines where certain elements can be placed. This is not too complicated, so we will run over it before you get started.
+</p>
+<img src="images/document_structure.png" />
+<p>
+The first part of the document is the <b>DOCTYPE</b>, which is placed at the very top of the document. This is a strange element, as it only has an opening tag. For now, all you need to know about it is that you just have to write <b>&#60;!DOCTYPE html&#62;</b> at the top of every html file that you make.
+</p>
+<p>
+The next part is the <b>html</b> element. Within this element is where all of you code will go. As you notice, the opening tag comes right after the DOCTYPE, and the closing tag goes at the very end. This is the most simple, but most crucial, part of the webpage, because without it, the browser will not recognize any of your code.
+</p>
+<p>
+Within the html tag are the two sub-units of the webpage: the <b>head</b> and <b>body</b> elements. The head element contains all of the non-displayed information, such as the webpage's name. The body tag, on the other hand, contains all of the code that will actually be shown on the webpage. The earlier code has examples of elements within both, and we will run over them now.</p>
+</p>
+<p>
+In the head element, we have the <b>title</b> element. This is not shown in the webpage itself, but it is displayed by the browser. Depending on the browser you have, the title will be displayed somewhere above the webpage; it is usually either in the tab or at the top of the browser itself. For example, you can see that the title of the webpage you made earlier was "Hello World". This was set in the title element.
+</p>
+<p>
+In the body element, we have a different sort of element, the <b>h1</b> element. This stands for header 1, and is the largest text you can get strictly in HTML. This is also the text that you see on the top of the webpage. As you can see, it is displayed within the webpage itself, unlike the title.
+</p>
+<p>
+This is a founding principle in how webpages, so make sure you understand it before going too far. The next section will give you more elements, so you can put them in the webpage in both the head and body tags, and see that only the elements in the body tag will show up.
+</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Introduction</title>
+<link rel="stylesheet" href="onepage-scroll.css">
+<link rel="stylesheet" href="intro.css">
+</head>
+
+<body>
+<div id="text">
+<section>
+<img id="logo" src="titles/splash_logo.png" />
+<p id="main">
+<img src="overlays/codegraphic.png" id="overlay" />
+This site helps you learn all the steps of making a website from designing to coding.  You will learn how to code in HTML, the core language of the web, and CSS, the code for making a website appealing. We have four sections: HTML, CSS, Design, and Technical.  Each book has chapters that focus on the main ideas and core concepts of the section. In HTML you learn how to put content into your website in the form of text, images, and more. In CSS you will discover how to affect your content with colors, fonts, and layouts.  The Design section focuses on the Principles of Design and how to apply them to a website.  Finally, in the Technical section, you will learn about saving and publishing your website. However, before that, we will go over a few basics on this page.
+<br>
+<br>
+</p>
+<span id="scroll"><b>Scroll down to continue</b></span>
+<img id="down" src="images/arrow.png" />
+</section>
+<section>
+<p id="explain">
+On this page, we will be going over the basics you need to know before getting into the code. The first step in this is how to set up your workspace. To begin, create a folder in your documents, and name it "My Website". This is where you will be keeping the files for you website.
+</p>
+<img id="windows" src="images/introOneW.png" />
+<img id="mac" src="images/introOne.png" />
+</section>
+<section>
+<p id="explain">
+After this, you can open up a text editor. On Windows, a good option is Notepad. On Mac, the best is TextEdit. <i>However, with TextEdit, you have to set it to plain text before writing code (Format - Make Plain Text), or it will not save correctly.</i>
+</p>
+<img id="windows" src="images/introTwoW.png" />
+<img id="mac" src="images/introTwo.png" />
+</section>
+<section>
+<p id="explain">
+Once you have got this started, it is time to put in some code. For now, we'll just give you some code to copy, but it will be explained later. For now, just copy this into your text editor:
+</p>
+<div id="code">
+	&#60;!DOCTYPE html&#62;<br>
+	&#60;html&#62;<br>
+	&#60;head&#62;<br>
+	&#60;title&#62;Hello World&#60;/title&#62;<br>
+	&#60;/head&#62;<br>
+	<br>
+	&#60;body&#62;<br>
+	&#60;h1&#62;This is my first website!&#60;/h1&#62;<br>
+	&#60;/body&#62;<br>
+	<br>
+	&#60;/html&#62;
+</div>
+</section>
+<section>
+<p id="explain">
+Once you have this in your editor, you can now save it. Press the save button or Ctrl-S, but when the save screen pops up, do not go with what it says. If it says .txt, .rtf, or any other file extension other than html, replace it with .html. When you have done this, replace the text before it with index. This allows a browser to recognize it as a home page later on. The final name should be "index.html". Make sure to save this to your new folder. <i>If it reopens in your text editor, make sure that you saved it as a .html, and not as a txt. Some applications will ask you if you want to use .html or .txt. <b>Use .html</b></i>
+</p>
+<img id="windows" src="images/introThreeW.png" />
+<img id="mac" src="images/introThree.png" />
+</section>
+<section>
+<p id="explain">
+Now that you have done this, go back to the "My Website" folder. There should now be a file in there, your "index.html". If you double-click on this, it should open up in your web browser. What should show up is a webpage with some text at the top saying, "This Is My First Website". If it doesn't, go back and double check that you completed all of the correct steps.
+</p>
+<img id="windows" src="images/introFourW.png" />
+<img id="mac" src="images/introFour.png" />
+</section>
+<section>
+<p id="main">
+With that, you have learned the basics that you need to start coding. By navigating throughout, you can use the menu to the left, or the search bar. Also, you can use the compiler in the top right corner to test your code within the website! To begin, choose the "HTML" section to the left, and start going through the chapters.
+</p>
+</section>
+</div>
+
+<script src="jquery.js" type="text/javascript"></script>
+<script src="jquery-onepage-scroll.js" type="text/javascript"></script>
+<script>
+$("#text").onepage_scroll({loop: false, animationTime: 500});
+</script>
+</body>
+</html>

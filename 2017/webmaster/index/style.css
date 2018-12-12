@@ -1,0 +1,134 @@
+h1{
+	font-size: 60px;
+}
+em{
+
+}
+.hr{
+	background-color: #999;
+	width: 800px;
+}
+#top{
+	padding-top: 60px;
+	padding-bottom: 120px;
+	display: flex;
+	display:-webkit-flex;
+	flex-flow: row-reverse;
+	justify-content: center;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	height: 70vh;
+}
+#content{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+#splash-logo{
+	width: 300px;
+	height: 300px;
+	background-color: #6B9684;
+	border-radius: 50%;
+	display: flex;
+	display:-webkit-flex;
+	justify-content: center;
+	align-items: center;
+	/*align-self: flex-end;*/
+	margin-top: 90px;
+	position: static;
+
+}
+#splash-logo h1{
+	color: #fff;
+}
+#small-logo{ /* all small- prefixes and logo holder are for mobile version */
+	width: 300px;
+	height: 300px;
+	background-color: #6B9684;
+	border-radius: 50%;
+	display: flex;
+	display:-webkit-flex;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-end;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	display: none;
+	position: absolute;
+}
+#small-logo h1{
+	color: #fff;
+}
+#real{
+	margin-left: 10px;
+	margin-right: 150px;
+	position: static;
+	display:initial;
+	color: #6B9684;
+}
+#small-real{
+	display: none;
+	position: absolute;
+	color: #6B9684;
+}
+.logo-holder{
+	display: none;
+	position: absolute;
+}
+#p-cont{
+	width:  800px;
+	padding: 15px 0px 15px 0px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#text{
+	width:450px;
+
+}
+
+/* media queries */
+@media screen and (max-width: 1100px) {
+	.hr{
+		height: 2px;
+	}
+	#p-cont{
+		justify-content: center;
+	}
+	#text{
+		margin-right: 0;
+	}
+	/* magical appearing logo */
+	#real{
+		display: none;
+		position: absolute;
+	}
+	#splash-logo{
+		display: none;
+		position: absolute;
+	}
+	#small-logo{
+		display: flex;
+		position: static;
+	}
+	#small-real{
+		display: initial;
+		position: initial;
+	}
+	.logo-holder{
+		display: flex;
+		position: static;
+	}
+	#edu{
+		left: 0vw;
+	}
+	#top{
+		padding-top: 600px;
+	}
+
+}
+@media screen and (max-width: 900px) {
+	#top{
+		padding-top: 200px;
+	}
+}

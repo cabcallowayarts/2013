@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="schoolStyle.css">
+	<title>School</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+     <script type="text/javascript">
+
+    $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+    </script>
+</head>
+<body onscroll="updateHeader()">
+	<div id="nav">
+        <div class="nav" id="school">
+            <a class="nav1" href="school.html">SCHOOL<div></div></a>
+        </div>
+        <div class="nav" id="learning">
+            <a class="nav1" href="learning.html">LEARNING<div></div></a>
+        </div>
+        <a href="index.html" >
+        <img src="cab_script.png" id="logo"/>
+        </a>
+        <div class="nav" id="chapter">
+            <a class="nav1" href="chapter.html">CHAPTER<div></div></a>
+        </div>
+        <a href="design-brief/index.html" id="designLink">
+    <div class="nav" id="designb">
+        <p class="nav" >DESIGN BRIEF</p>
+    </div>
+        </a>
+
+    </div>
+
+    <div id="submenu">
+        <div class="hr1"  id="subhr"></div>
+        <div id="holder">
+            <a class="nav2" href="#about">ABOUT</a>
+            <a class="nav2" href="#majors">THE MAJORS</a>
+            <a class="nav2"  href="#visit">VISIT US</a>
+        </div>
+        <div class="hr1" id="subhr1"></div>
+    </div>
+
+    <div id="main">
+        <h1>ARTS ARE INTEGRAL TO EDUCATION</h1>
+	</div>
+
+   <div name="about" id="about" class="bar">
+         <img class ="header"src="School_Photos/School_Vectors/About_Stroke.png">
+    </div>
+
+    <div id="body1" class="body">
+        <h1>OUR MISSION</h1>
+        <div class="learnhr"></div>
+        <p class="body">Cab Calloway School of the Arts invites students who demonstrate artistic interest and potential to engage in a rigorous curriculum where arts and academics combine to cultivate the development of independent investigation, critical and creative thinking, and the innovative application of acquired skills. Our graduates will demonstrate a mastery of defined skills that will enable them to be productive, self-directed, lifelong learners, who appreciate and respect diversity.<br><br>
+        When a study of arts and academics are combined, each informs and enriches the other. At the Cab Calloway School of the Arts, students will receive an exemplary academic program in all required subject areas, and a special curriculum, which will emphasize the creative, performing, and visual arts.</p>
+        <div class="learn"><p><a target="_blank" href="http://cabcallowayschool.org/">LEARN MORE</a></p></div>
+    </div>
+
+    <div name="majors" id="majors" class="bar">
+        <img class ="header"src="School_Photos/School_Vectors/The_Majors_Stroke.png">
+    </div>
+
+    <div id="body2" class="body">
+        <div class="cube-container">
+        <div id="dance" class="cube">
+            <p class="major">DANCE</p>
+            <div class="description">
+                <p>The Cab Calloway dance curriculum focuses on extensive interdisciplinary training in ballet, jazz, and modern techniques, as well as multicultural dance traditions.</p>
+            </div>
+        </div>
+        <div id="dm" class="cube">
+            <p class="major">DIGITAL MEDIA</p>
+            <div class="description">
+                <p>Students develop the ability to create and synthesize new ideas within the context of creative writing, oratory, photography, cinematography and other technologies.</p>
+            </div>
+        </div>
+        <div id="instrum" class="cube">
+            <p class="major">INSTRUMENTAL MUSIC</p>
+            <div class="description">
+                <p>Instrumental music allows musically inclined students to pursue study of the concert band and orchestra, which include woodwinds, brass, and percussion</p>
+            </div>
+        </div>
+        <div id="piano" class="cube">
+            <p class="major">PIANO</p>
+            <div class="description">
+                <p>Piano students learn in the extensive Cab piano lab, where they deveop their musical technique, study, analyze, and perform pieces ranging from beginner to master difficulty.</p>
+            </div>
+        </div>
+        <div id="theater" class="cube">
+            <p class="major">THEATRE</p>
+            <div class="description">
+                <p>The Theatre Arts program is a sequential course of study focused on the five major components of theatrical production: acting, directing, playwriting, producing, and technical theatre.</p>
+            </div>
+        </div>
+        <div id="tech" class="cube">
+            <p class="major">TECHNICAL THEATRE</p>
+            <div class="description">
+                <p>Technical theather students go behind the scenes in the Cab Calloway auditorium, where they learn how to control the various aspects that go into every theater event.</p>
+            </div>
+        </div>
+        <div id="strings" class="cube">
+            <p class="major">STRINGS</p>
+            <div class="description">
+                <p>The new, but steadily rising, strings program of Cab Calloway allows aspiring strings players to study in a well-kept environment allowing exposure to orchestra and chamber music styles.</p>
+            </div>
+        </div>
+        <div id="vocal" class="cube">
+            <p class="major">VOCAL MUSIC</p>
+            <div class="description">
+                <p>Students are taught how to sing in a healthy manner, including techniques for solo and ensemble performances. Many programs are available for students, both in middle and high school.</p>
+            </div>
+        </div>
+        <div id="visual" class="cube">
+            <p class="major">VISUAL ARTS</p>
+            <div class="description">
+                <p>Through a variety of tools, techniques, and processes, students grow to better understand the interplay of different media, styles, and design principles in the creation of their own work.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div name="visit" id="visit" class="bar">
+         <img class ="header"src="School_Photos/School_Vectors/Visit_Us_Stroke.png">
+    </div>
+
+    <div id="body3" class="body">
+        <img id="google"src="Location.png"/>
+        <p id="visit">100 NORTH DUPONT ROAD<BR> WILMINGTON DE 19807<br><br><em>302.651.2700</em></p>
+        <div class="break"></div>
+         <div class="hr1"  id=""></div>
+
+    <ul id="mainlist">
+        <li>
+        <ul class="listitle">
+            <li>DEAN</li>
+            <li class="spacer"><br></li>
+            <li>ASSISTANT DEAN</li>
+            <li class="spacer"><br></li>
+            <li>ASSISTANT DEAN</li>
+            <li class="spacer"><br></li>
+        </ul>
+    </li>
+    <li>
+        <ul class="link">
+            <li>Julie Rumschlag</li>
+            <li class="email">julie.rumschlag@redclay.k12.de.us</li>
+            <li >Joe Hocking</li>
+            <li class="email">joe.hocking@redclay.k12.de.us</li>
+            <li>Will Robinson</li>
+            <li class="email">willie.robinson@redclay.k12.de.us</li>
+        </ul>
+        </li>
+    </ul>
+
+<div class="hr1"  id="yes"></div>
+    </div>
+
+	<footer>
+
+        <div class="footer-top">
+            <a href="index.html"><img src="cab_script.png"/></a>
+            <ul class="footer-menu">
+                <li>
+                    <ul>
+                        <li>SCHOOL</li>
+                        <li><a href="school.html#about">ABOUT</a></li>
+                        <li><a href="school.html#majors">THE MAJORS</a></li>
+                        <li><a href="school.html#visit">VISIT US</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>LEARNING</li>
+                        <li><a href="learning.html#curric">STEM CURRICULUM</a></li>
+                        <li><a href="learning.html#career">CAREER PATHWAY</a></li>
+                        <li><a href="learning.html#clubs">STEM CLUBS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>CHAPTER</li>
+                        <li><a href="chapter.html#about">ABOUT</a></li>
+                        <li><a href="chapter.html#officers">OFFICERS</a></li>
+                        <li><a href="chapter.html#chapterb">ACTIVITIES</a></li>
+                        <li><a href="chapter.html#past">PAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>DESIGN BRIEF</li>
+                        <li><a href="design-brief/about.html">ABOUT</a></li>
+                        <li><a href="design-brief/commercial.html">COMMERCIAL</a></li>
+                        <li><a href="design-brief/educational.html">EDUCATIONAL</a></li>
+                        <li><a href="design-brief/research.html">RESEARCH</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="footer-bottom">
+            <span><em>2016</em> CAB CALLOWAY TSA</span>
+             <div class="icons">
+                <div class="icon">
+                    <a href="https://facebook.com/CabCallowaySchooloftheArts/"><img src="School_Photos/School_Vectors/Icons/Facebook_Icon.png"/></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.instagram.com/cabcallowayarts/"><img src="School_Photos/School_Vectors/Icons/Instagram_Icon.png"/></a>
+                </div>
+                <div class="icon">
+                    <a href="https://twitter.com/cabcallowayarts"><img src="School_Photos/School_Vectors/Icons/Twitter_Icon.png"/></a>
+                </div>
+                <div class="icon">
+                    <a href="https://vimeo.com/cabcallowayschool"><img src="School_Photos/School_Vectors/Icons/Vimeo_Icon.png"/></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function updateHeader(){
+            if(window.pageYOffset > 120){
+                $("#nav").css("top","-120px");
+                $("#nav").css("position","fixed");
+                $("#submenu").css("top","0px");
+                $("#submenu").css("position","fixed");
+            }else{
+                $("#nav").css("top","0px");
+                $("#nav").css("position","absolute");
+                $("#submenu").css("top","120px");
+                $("#submenu").css("position","absolute");
+            }
+        }
+        var isShowing = false;
+        function toggleMenu(){
+            if(isShowing){
+                $( ".menu-wrapper" ).slideUp(100);
+                $( ".hamburger-menu" ).css("background-image", "url('hamburger_menu.png')");
+                isShowing = false;
+            }else{
+                $( ".menu-wrapper" ).slideDown(100);
+                $( ".hamburger-menu" ).css("background-image", "url('hamburger_x.png')");
+                isShowing = true;
+            }
+        }
+    </script>
+    <script src="https://use.typekit.net/jxa8umn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</body>
+</html>

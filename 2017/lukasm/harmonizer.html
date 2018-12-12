@@ -1,0 +1,188 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="tuna-master/tuna.js"></script>
+    <script src="animations.js"></script>
+    <script src="audiokeys.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+      img
+      {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+
+  <h1 id="title">harmonizer</h1>
+
+   <!-- <img id="image2" src="audiokeys-mapping-rows2.jpg">-->
+   <div id="keyboard">
+   <div class="blacks row">
+   <div class="key spacer"><h4>`</h4></div>
+    <div class="key spacer"><h4>1</h4></div>
+     <div class="key black" id="50"><h4>2</h4></div>
+     <div class="key black" id="51"><h4>3</h4></div>
+     <div class="key spacer"><h4>4</h4></div>
+     <div class="key black" id="53"><h4>5</h4></div>
+     <div class="key black" id="54"><h4>6</h4></div>
+     <div class="key black" id="55"><h4>7</h4></div>
+     <div class="key spacer"><h4>8</h4></div>
+     <div class="key black" id="57"><h4>9</h4></div>
+     <div class="key black" id="48"><h4>0</h4></div>
+     <div class="key spacer"><h4>-</h4></div>
+     <div class="key spacer"><h4>=</h4></div>
+     <div class="key spacer tdel"><h4>delete</h4></div>
+   </div>
+     <div class="whites row">
+     <div class="key spacer tdel"><h4>tab</h4></div>
+      <div class="key white" id="81"><h4>q</h4></div>
+      <div class="key white" id="87"><h4>w</h4></div>
+      <div class="key white" id="69"><h4>e</h4></div>
+      <div class="key white" id="82"><h4>r</h4></div>
+      <div class="key white" id="84"><h4>t</h4></div>
+      <div class="key white" id="89"><h4>y</h4></div>
+      <div class="key white" id="85"><h4>u</h4></div>
+      <div class="key white" id="73"><h4>i</h4></div>
+      <div class="key white" id="79"><h4>o</h4></div>
+      <div class="key white" id="80"><h4>p</h4></div>
+      <div class="key white" id="219"><h4>[</h4></div>
+      <div class="key spacer"><h4>]</h4></div>
+      <div class="key spacer"><h4>\</h4></div>
+     </div>
+
+    <div class="blacks row">
+    <div class="key spacer crun"><h4>caps lock</h4></div>
+    <div class="key spacer"><h4>a</h4></div>
+     <div class="key black" id="83"><h4>s</h4></div>
+     <div class="key black" id="68"><h4>d</h4></div>
+     <div class="key spacer"><h4>f</h4></div>
+     <div class="key black" id="71"><h4>g</h4></div>
+     <div class="key black" id="72"><h4>h</h4></div>
+     <div class="key black" id="74"><h4>j</h4></div>
+     <div class="key spacer"><h4>k</h4></div>
+     <div class="key black" id="76"><h4>l</h4></div>
+     <div class="key black" id="186"><h4>;</h4></div>
+     <div class="key spacer"><h4>'</h4></div>
+     <div class="key spacer crun"><h4>return</h4></div>
+   </div>
+     <div class="whites row">
+      <div class="key spacer shift"><h4>shift</h4></div>
+      <div class="key white" id="90"><h4>z</h4></div>
+      <div class="key white" id="88"><h4>x</h4></div>
+      <div class="key white" id="67"><h4>c</h4></div>
+      <div class="key white" id="86"><h4>v</h4></div>
+      <div class="key white" id="66"><h4>b</h4></div>
+      <div class="key white" id="78"><h4>n</h4></div>
+      <div class="key white" id="77"><h4>m</h4></div>
+      <div class="key white" id="188"><h4>,</h4></div>
+      <div class="key white" id="190"><h4>.</h4></div>
+      <div class="key white" id="191"><h4>/</h4></div>
+      <div class="key spacer shift"><h4>shift</h4></div>
+     </div>
+   </div>
+
+  <div id="head1" class="heading">
+  <h2>Volume/Fade</h2>
+  <div class="arrow-down"></div>
+  </div>
+
+
+  <!-- Volume and Fade selectors -->
+
+
+  <div class="oscont" id="osc1">
+    <div class="oscbox">
+    <h2>oscillator 1</h2>
+    <select onchange="changeWave()" id="oscillator">
+      <option value="sine">sine</option>
+      <option value="sawtooth">sawtooth</option>
+      <option value="square">square</option>
+      <option value="triangle">triangle</option>
+    </select>
+
+    <h3> volume </h3>
+    <input type="range" id="volume" max="70" min="0" value="100">
+
+    <h3>octave</h3>
+    <input type="range" id="interval" max="4" min="0" value="2">
+
+
+
+    </div>
+    <div class="oscbox box">
+      <h2>oscillator 2</h2>
+      <select onchange="changeWave1()" id="oscillator1">
+        <option value="sine">sine</option>
+       <option value="sawtooth">sawtooth</option>
+        <option value="square">square</option>
+        <option value="triangle">triangle</option>
+    </select>
+
+      <h3> volume </h3>
+      <input type="range" id="volume1" max="70" min="0" value="100">
+
+
+      <h3>octave</h3>
+
+      <input type="range" id="interval1" max="4" min="0" value="2">
+
+      <br>
+      </div>
+      <div class="oscbox">
+      <h2>fader</h2>
+        <h3>fade in</h3>
+        <input id="fadeIn" type="range" max="200" min="3" value="10">
+        <h3>fade out</h3>
+        <input id="fadeOut" type="range" max="20" min="1" value="0">
+      </div>
+      </div>
+
+    <div id="head2" class="heading">
+    	<h2 id="test">Pedals</h2>
+      <div class="arrow-down" id="down1"></div>
+    	</div>
+
+      <!-- Pedal Selectors -->
+
+
+    	<div class="oscont" id="osc2">
+        <div class="oscbox box" id="overdrive">
+        <h2>Overdrive</h2>
+        <div class="row">
+        <h3>oscilator 1: </h3> <input type="checkbox" id="ov" onchange="changeDrive()">
+        <h3>oscilator 2: </h3> <input type="checkbox" id="ov1" onchange="changeDrive()">
+        </div>
+
+
+        <h3> drive </h3>
+        <input type="range" id="drive" max="100" min="0" value="0" oninput="changeDrive()">
+
+
+        <h3> type </h3>
+
+        <input type="range" id="type" max="5" min="1" value="2" oninput="changeDrive()">
+
+        <br>
+        </div>
+
+        <div class="oscbox box pedal" id="delay">
+        <h2>Delay</h2>
+        <h3>Delay Time</h3>
+        <input type="range" id="dtime" max="1000" min="1" value="150" oninput="changeDelay()">
+        <h3>Feedback</h3>
+        <input type="range" id="dfeed" max="100" min="0" value="80" oninput="changeDelay()">
+        <h3>Amount</h3>
+         <input type="range" id="dmount" max="100" min="0" value="50" oninput="changeDelay()">
+        </div>
+    </div>
+
+
+    <script src="note.js"></script>
+  </body>
+</html>

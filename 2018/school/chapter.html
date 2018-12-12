@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Our Chapter</title>
+        <link rel="stylesheet" href="sindex.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var Height1 = $("#chapsec1").css('height', 'auto').height(),
+                    Height2 = $("#chapsec2").css('height', 'auto').height(),
+                    Height3 = $("#chapsec3").css('height', 'auto').height(),
+                    Height4 = $("#chapsec4").css('height', 'auto').height();
+
+                $(".chapsec").css("height", "300px");
+
+                $("#chapsec1").dblclick(function(){
+                    $("#title1").css("visibility", "collapse");
+                    $("#para1").css("visibility", "collapse");
+                    $("#chapsec1").animate({height: 300});
+                    $("#chapsec1").css("flex-direction", "row");
+                    $("#f1").show();
+                    $("body").css("height", "auto");
+                    $("#chapsec1").css("cursor", "pointer")
+                });
+
+                $("#chapsec1").click(function(){
+                    $("#sec1").css("background-image", "none");
+                    $("#title1").css("visibility", "visible");
+                    $("#para1").css("visibility", "visible");
+                    $("#chapsec1").animate({height: Height1});
+                    $("#f1").hide();
+                    $("#chapsec1").css("flex-direction", "column");
+                    $("#chapsec1").css("cursor", "default");
+                });
+
+                $("#chapsec2").dblclick(function(){
+                    $("#title2").css("visibility", "collapse");
+                    $("#para2").css("visibility", "collapse");
+                    $("#para3").css("visibility", "collapse");
+                    $("#chapsec2").animate({height: 300});
+                    $("#chapsec2").css("flex-direction", "row");
+                    $("#f2").show();
+                    $("body").css("height", "auto");
+                    $("#chapsec2").css("cursor", "pointer")
+                });
+
+                $("#chapsec2").click(function(){
+                    $("#chapsec2").css("background-image", "none")
+                    $("#title2").css("visibility", "visible");
+                    $("#para2").css("visibility", "visible");
+                    $("#para3").css("visibility", "visible");
+                    $("#chapsec2").animate({height: Height2});
+                    $("#chapsec2").css("flex-direction", "column");
+                    $("#f2").hide();
+                    $("body").css("height", "auto");
+                    $("#chapsec2").css("cursor", "default");
+                });
+
+                $("#chapsec3").dblclick(function(){
+                    $("#officerlist").css("visibility", "collapse");
+                    $(".officercont").css("visibility", "collapse");
+                    $(".officer").css("visibility", "collapse");
+                    $("#chapsec3").animate({height: 300});
+                    $("#chapsec3").css("flex-direction", "row");
+                    $("#f3").show();
+                    $("#chapsec3").css("cursor", "pointer")
+                });
+
+                $("#chapsec3").click(function(){
+                    $("#officerlist").css("visibility", "visible");
+                    $(".oficercont").css("visibility", "visible");
+                    $(".officer").css("visibility", "visible");
+                    $("#f3").hide();
+                    $("#chapsec3").css("flex-direction", "column");
+                    $("#chapsec3").css("cursor", "default");
+
+                    var Height3 = $("#chapsec3").css('height', 'auto').height();
+
+                    $("#chapsec3").animate({height: Height3});
+                });
+
+                $("#chapsec4").dblclick(function(){
+                    $("#sec4left").css("visibility", "collapse");
+                    $("#sec4right").css("visibility", "collapse");
+                    $("#chapsec4").css("flex-direction", "row");
+                    $("#chapsec4").animate({height: 300});
+                    $("#f4").show();
+                    $("body").css("height", "auto");
+                    $("#chapsec4").css("cursor", "pointer")
+                });
+
+                $("#chapsec4").click(function(){
+                    $("#sec4left").css("visibility", "visible");
+                    $("#sec4right").css("visibility", "visible");
+                    $("#chapsec4").css("flex-direction", "row");
+                    $("#chapsec4").animate({height: Height4});
+                    $("#f4").hide();
+                    $("body").css("height", "auto");
+                    $("#chapsec4").css("cursor", "default");
+                });
+
+            });
+        </script>
+        <style>
+            .fronttext {
+                color: #19458C;
+            }
+            h2 {
+                color: #19458C;
+            }
+        </style>
+        </head>
+    <body id="schoolbody" onscroll="updateHead()">
+    <div id="chapmain">
+      <script >
+                var splashHeight = $(window).height();
+
+                function updateHead(){
+                if(window.pageYOffset > splashHeight){
+                    $(".linkcontain").css("top","0px");
+                    $(".linkcontain").css("position","fixed");
+                }else{
+                    $(".linkcontain").css("top","100vh");
+                    $(".linkcontain").css("position","absolute");
+                    $(".linkcontain").css("margin-bottom", "20px");
+                }
+                };
+        </script>
+       <div id="splasharea">
+            <div id="introcontain">
+               <div id="logohold">
+                    <p id="introtext">CAB</p>
+                    <img src="images/TSA-Technology-Student-Association-Emblem.png" id="tsalogo">
+               </div>
+            </div>
+        </div>
+        <div class="linkcontain" id="menu">
+            <ul class="links">
+                <li><a href="sindex.html" class="button">SCHOOL</a></li>
+                <li><a href="chapter.html" class="button">CHAPTER</a></li>
+                <li><a href="../index.html" class="button">DESIGN BRIEF</a></li>
+            </ul>
+        </div>
+            <div id="chapsec1" class="chapsec">
+                <p class="fronttext" id="f1">MOTTO/CREED</p>
+                <h2 id="title1" style="align-self: flex-start;" style="align-self: center;" class="collapsing">"Learning to lead in a technical world."</h2>
+                <p id="para1" class="conttext" class="collapsing">In Cab Calloway TSA, we do out best to find the intersection between technology and the arts. We specialize in events that combine the two, such as Webmaster, Desktop Publishing, Promotional Graphics, and Music Production. We have grown immensely in the five years since our conception, and we hope to keep growing and contributing to TSA.</p>
+            </div>
+            <div id="chapsec2" class="chapsec">
+                <p class="fronttext" id="f2">ABOUT</p>
+                <h2 id="title2" class="collapsing">OUR HISTORY</h2>
+                <p id="para2" class="conttext" class="collapsing">At Cab Calloway School of the Arts Middle School, Business Professionals of America (BPA), is a club that many students join and enjoy. It is a Career and Technical Student Organization that allows students to further their pursuance in careers dealing with management, administration, information technology, and many other career fields that are related.
+                </p>
+                <p id="para3" class="conttext" class="collapsing">
+Because of a large interest in technology, the High School Communication Arts teacher Mrs. Fanny worked hard to meet the interests of students and in 2010, the Cab Calloway TSA Chapter was founded. In 2011, our Chapter made it all the way to Nationals. Unfortunately we didn't place in anything but members enjoyed the experience and the opportunity. TSA allowed them to create strong bonds with other peers that they would have never imagined and to meet and make new friends at Nationals in Orlando, Florida.
+</p>
+            </div>
+            <div id="chapsec3" class="chapsec">
+                <p class="fronttext" id="f3">OFFICERS</p>
+                <h2 style="align-self: flex-start;" id="officerlist" class="collapsing">OFFICERS</h2>
+                <div class="officercont" class="collapsing">
+                    <div class="officer">
+                        <h4 style="flex-direction: row; justify-content: center;"><img src="images/president.png" class="symbol">PRESIDENT</h4>
+                        <img src="images//patrick.jpg" class="officerimg">
+                        <h4 style="align-content: center; margin-top: 0px">Patrick Taylor</h4>
+                    </div>
+                    <div class="officer">
+                        <h4 style="flex-direction: row; justify-content: center;"><img src="images/vp.png" class="symbol">V. PRESIDENT</h4>
+                        <img src="images/jenna.JPG" class="officerimg">
+                        <h4 style="align-content: center; margin-top: 0px">Jenna Hunt</h4>
+                    </div>
+                    <div class="officer">
+                        <h4 style="flex-direction: row; justify-content: center;"><img src="images/secretary.png" class="symbol">SECRETARY</h4>
+                        <img src="images/hannah.jpg" class="officerimg">
+                        <h4 style="align-content: center; margin-top: 0px">Hannah Rubin</h4>
+                    </div>
+                </div>
+                <div class="officercont" class="collapsing">
+                    <div class="officer">
+                        <h4 style="flex-direction: row; justify-content: center;"><img src="images/SaA.png" class="symbol">SGT. ARMS</h4>
+                        <img src="images/ethan.JPG" class="officerimg">
+                        <h4 style="align-content: center; margin-top: 0px">Ethan Budzynski</h4>
+                    </div>
+                    <div class="officer">
+                        <h4 style="flex-direction: row; justify-content: center;"><img src="images/treasurer.svg" class="symbol">TREASURER</h4>
+                        <img src="images/jack.JPG" class="officerimg">
+                        <h4 style="align-content: center; margin-top: 0px">Jack Seiffert</h4>
+                    </div>
+                    <div class="officer">
+                        <h4 style="flex-direction: row; justify-content: center;"><img src="images/reporter.png" class="symbol">REPORTER</h4>
+                        <img src="images/DSC_0005.jpg" class="officerimg">
+                        <h4 style="align-content: center; margin-top: 0px">Sohum Shenoy</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="chapsec4" class="chapsec">
+                <p class="fronttext" id="f4">CHAPTER ACTIVITIES</p>
+                <div id="sec4left" class="collapsing">
+                    <h2>CHAPTER ACTIVITIES</h2>
+                    <h4>FUNDRAISING</h4>
+                    <p class="bodytext">Our school sells various snacks everyday after school, and it is entirely staffed by club members to raise money. Any club can reserve a day, and they get a portion of the money they make, and do things like choose to bring in more than the standard treats to raise more money. Our TSA chapter has run the snack shack many days throughout the year as a constant and reliable source of funding for our chapter, that is easy to arrange and is very profitable for our chapter.
+                    </p>
+                    <p class="bodytext">The Bizarre Bazaar was a craft fair initially started by our Cab Calloway Middle School TSA chapter, however our high school chapter was paid a portion of the proceeds to help out at the fair by doing various things. We helped advertise their event and on the day of the event we helped out by selling products with them and doing anything else to help make their event run smoothly. It was a good fundraiser, that let both our TSA chapters work together and raise money for our club.</p>
+                </div>
+                <img src="images/DSC_0494.JPG" id="sec4right" class="collapsing">
+            </div>
+        <div id="footer">
+           <div id="exlinks">
+                <p class="foottext" id="desc" style="color: #825ea8"><br><a href="http://www.cabcallowayschool.org/" style="color: #825ea8">LEARN MORE ABOUT CAB</a></p>
+                <p class="foottext" id="desc"><a href="http://detsa.org/">DE TSA</a></p>
+                <p class="foottext" id="desc"><a href="http://www.tsaweb.org/">NATIONAL TSA</a></p>
+            </div>
+            <div id="footgroup">
+                <p class="foottext" id="desc"><a href="/index.html">DESIGN BRIEF</a></p>
+                <hr class="linksplit2">
+                <p class="foottext" id="desc"><a href="sindex.html">SCHOOL</a></p>
+                <hr class="linksplit2">
+                <p class="foottext" id="desc"><a href="chapter.html">CHAPTER</a></p>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

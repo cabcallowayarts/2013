@@ -1,0 +1,456 @@
+@media screen and (min-width: 680px){
+
+body{
+    width: 100%;
+    overflow-x:hidden;
+}
+
+div.selection{
+    width: 100%;
+    background-color: rgb(139,167,124);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.selection img{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.selection p{
+    width: 50%;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.4em;
+}
+.triangle{
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 75px 0 75px;
+    border-color: #8aa77c transparent transparent transparent;
+    margin: auto;
+}
+
+.devicelist .device{
+    display: inline-block;
+    margin: 20px;
+}
+.devicelist a{
+    color: #000;
+    text-decoration: none;
+}
+.devicelist .device img{
+    display: block;
+}
+.devicelist .device span{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.bubble{
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+    display: inline-block;
+    background-color: #FFF;
+    margin: 20px;
+    transition: .2s linear all;
+    overflow: hidden;
+}
+body .steps p{
+    display: block;
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-left: 0px;
+}
+.bubble h2{
+    font-size: 36px;
+    color: rgb(139,167,124);
+    margin-top: 50px;
+    margin-bottom: 5px;
+    transition: .2s linear all;
+    opacity: 1;
+}
+.bubble hr{
+    border: rgb(62,72,99) 1px solid;
+    width: 40%;
+    transition: .2s linear all;
+    opacity: 1;
+}
+.bubble h3{
+    color: rgb(62,72,99);
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    transition: .2s linear all;
+    opacity: 1;
+}
+
+
+.cellphones{
+    background-color: #DDD;
+}
+.cellphones h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 5em;
+    padding-top: 1em;
+    letter-spacing: 7px;
+}
+.cellphones img{
+    display: inline-block;
+    width: 25%;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.cellphones p{
+    display: inline-block;
+    width: 40%;
+    float: right;
+    color: #FFF;
+    font-size: 1.7em;
+    line-height: 1.3em;
+    padding-right: 15%;
+}
+.cellphones .steps{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.computers{
+    background-color: rgb(62,72,99);
+}
+.computers img{
+    display: block;
+    padding-top: 50px;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+}
+.computers p{
+    color: #FFF;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 1.6em;
+    line-height: 1.4em;
+}
+.computers .steps{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.batteries{
+    background-color: rgb(191,121,83);
+}
+.batteries h1{
+    margin: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 7em;
+    padding-top: 50px;
+    letter-spacing: 7px;
+}
+.batteries .image{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 140px;
+    width: 100%;
+    background-image: url(devices_big/battery.gif);
+    background-position: center;
+}
+.batteries p{
+    width: 60%;
+    color: #FFF;
+    font-size: 1.7em;
+    line-height: 1.3em;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.batteries .steps{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.tvs{
+    background-color: rgb(139,167,124);
+}
+.tvs h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    letter-spacing: 7px;
+    margin: 0px;
+}
+.tvs img{
+    display: inline-block;
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+.tvs p{
+    display: inline-block;
+    width: 30%;
+    float: right;
+    color: #FFF;
+    font-size: 1.7em;
+    line-height: 1.3em;
+    padding-right: 6%;
+}
+.tvs .steps{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+}
+
+
+@media screen and (max-width: 680px){
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+div.selection{
+    width: 100%;
+    background-color: rgb(139,167,124);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.selection img{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.selection p{
+    width: 80%;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.4em;
+}
+.triangle{
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 75px 0 75px;
+    border-color: #8aa77c transparent transparent transparent;
+    margin: auto;
+}
+.devicelist a{
+    color: #000;
+    text-decoration: none;
+}
+.devicelist .device{
+    display: block;
+    height: 200px;
+    border-bottom: 2px #DDD solid;
+}
+.devicelist .device img{
+    display: inline-block;
+    height: 150px;
+    margin: 20px;
+}
+.devicelist .device span{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin: 20px;
+    font-weight: bold;
+    transform: translateY(-70px);
+}
+
+.bubble{
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+    display: inline-block;
+    background-color: #FFF;
+    margin: 20px;
+}
+.bubble h2{
+    font-size: 36px;
+    color: rgb(139,167,124);
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+.bubble hr{
+    border: rgb(62,72,99) 1px solid;
+    width: 40%;
+}
+.bubble h3{
+    color: rgb(62,72,99);
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+
+.cellphones{
+    background-color: #DDD;
+    overflow: hidden;
+}
+.cellphones h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 1em;
+    letter-spacing: 7px;
+}
+.cellphones hr.thing{
+    display: none;
+}
+.cellphones img{
+    display: inline-block;
+    width: 25%;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.cellphones p{
+    display: inline-block;
+    width: 40%;
+    float: right;
+    color: #FFF;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    padding-right: 15%;
+}
+.cellphones .steps{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.computers{
+    background-color: rgb(62,72,99);
+}
+.computers img{
+    display: block;
+    padding-top: 50px;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+}
+.computers p{
+    color: #FFF;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+.computers hr.thing{
+    width: 25%;
+    margin: auto;
+    border: 2px solid #FFF;
+    margin-top: 50px;
+}
+.computers .steps{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+.batteries{
+    background-color: rgb(191,121,83);
+    overflow: hidden;
+}
+.batteries h1{
+    margin: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 50px;
+    letter-spacing: 7px;
+}
+.batteries .image{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 70px;
+    width: 100%;
+    background-image: url(devices_big/battery.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+.batteries p{
+    width: 70%;
+    color: #FFF;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+.batteries hr.thing{
+    width: 25%;
+    margin: auto;
+    border: 2px solid #FFF;
+    margin-top: 50px;
+}
+.batteries .steps{
+    padding-top: 50px;
+    max-width: 500px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+
+.tvs{
+    background-color: rgb(139,167,124);
+}
+.tvs h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    letter-spacing: 7px;
+    margin: 0px;
+}
+.tvs img{
+    display: inline-block;
+    width: 40%;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+.tvs p{
+    display: inline-block;
+    width: 40%;
+    float: right;
+    color: #FFF;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    padding-right: 6%;
+}
+.tvs .steps{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+}

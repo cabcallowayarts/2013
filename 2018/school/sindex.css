@@ -1,0 +1,428 @@
+html {
+    height: 100%;
+}
+#indexbody {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/DSC_6249_edit2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+}
+#schoolbody {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/DSC_6249_edit2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    overflow-x: hidden;
+}
+#schoolmain {
+    height: auto;
+    overflow: hidden;
+}
+#chapmain {
+    height: auto;
+    overflow: hidden;
+}
+.cablogo {
+    width: 280px;
+    height: 280px;
+}
+#splasharea {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+}
+#introcontain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-left: 20px;
+    height: 100%;
+    width: 40%;
+}
+#introtext {
+    font-weight: 700;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    font-size: 160px;
+    font-family: "Neutraface-2-text-1f", sans-serif;
+    letter-spacing: -2px;
+}
+#logohold {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 180px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#enterlink {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Neutraface", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+a:link, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: white;
+}
+.linkcontain {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    top: 100px;
+    width: 100%;
+    height: 65px;
+    margin-bottom: 30px;
+    z-index: 3;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.button {
+    font-family: "Neutraface",sans-serif;
+    font-weight: 700;
+    font-size: 30;
+}
+#contentarea {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    background-color: #f1f1f2;
+    width: 70%;
+    height: auto;
+    margin-bottom: 2%;
+}
+#sec1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px;
+    margin-top: 100px;
+    background-image: url(images/c_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2 {
+    font-size: 30px;
+    font-family: "Neutraface",sans-serif;
+    color: #825ea8;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+#sec1left {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.bodytext {
+    margin-left: 10px;
+    font-family: "Neutraface","Helvetica","Arial",sans-serif;
+    line-height: 1.3;
+    font-size: 15;
+}
+#sec1right {
+    display: flex;
+    align-self: center;
+    height: 500px;
+    margin: 10px;
+}
+#year25 {
+    width: 150px;
+    height: 125px;
+    align-self: center;
+}
+#majorcontain {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: inherit;
+    width: 98%;
+    margin: 10px;
+    height: auto;
+}
+.majorpics {
+	max-width: 100%;
+    height: auto;
+    margin-top: 2px;
+    -webkit-transition: opacity 1s;
+}
+.imagewords:hover {
+    opacity: 1;
+    background-image: url(images/majorback.png)
+}
+h3 {
+    color: white;
+    font-family: "Neutraface", sans-serif;
+    font-size: 50px;
+    margin-left: 10px;
+}
+#imagecontain {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    height: 33vw;
+    overflow: hidden;
+}
+.imagesize {
+    width: 30%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    background-size: contain;
+    margin-top: 20px;
+}
+h4 {
+    color: black;
+    font-family: "Neutraface", sans-serif;
+    font-size: 45px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+#sec3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(images/DSC_8069.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sec3left {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+#sec3right {
+    display: flex;
+    align-self: center;
+    height: 500px;
+    margin: 10px;
+}
+#sec4 {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url(images/DSC_0022.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sec4left {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+#sec4right {
+    display: flex;
+    align-self: center;
+    height: 500px;
+    margin: 10px;
+}
+#footer {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+#footgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 360px;
+    margin-right: 10px;
+}
+.foottext {
+    width: 130px;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-family: "Neutraface","Helvetica","Arial",sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    margin: 0px;
+    font-weight: 600;
+}
+#desc {
+    display: flex;
+    align-self: center;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#exlinks {
+    height: 120px;
+    margin: 0px;
+    position: relative;
+    top: -10px;
+}
+.linksplit2 {
+    height: 80px;
+    width: 1px;
+    background-color: white;
+}
+#chapsec1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+#tsalogo {
+    width: 350px;
+    height: 145px;
+    align-self: center;
+}
+.tsasplit {
+    width: 700px;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #ee3124;
+    margin: none;
+}
+#chapsec3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.officercont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 96%;
+}
+.symbol {
+    height: 50px;
+    margin-right: 20px;
+}
+.officerimg {
+    max-width: 80%;
+}
+.officer {
+    width: 32%;
+    visibility: collapse;
+}
+#chapsec4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.schoolsec {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f2;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 20px;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+.collapsing {
+    visibility: hidden;
+}
+.fronttext {
+    font-family: "Neutraface","Arial",sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+    margin-left: 30px;
+}
+.fronttext {
+    align-self: center;
+}
+.fix {
+    top: 0;
+    width: 100%;
+}
+#sec2 {
+    flex-direction: row;
+    height: 100%;
+    -webkit-transition: height .5s;
+    background-image: url(images/DSC_3628.JPG);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hoverdesc {
+    visibility: hidden;
+}
+.chapsec {
+    display: flex;
+    flex-direction: row;
+    background-color: #ECECED;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.conttext {
+    visibility: collapse;
+    margin-left: 10px;
+    font-family: "Neutraface","Helvetica","Arial",sans-serif;
+    line-height: 1.3;
+    font-size: 15;
+}
+.imagewords {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -80%;
+    width: 100%;
+    height: 75%;
+    text-align: left;
+    z-index: 2;
+    opacity: 0;
+    -webkit-transition: background-image 1s;
+    margin: none;
+}
+.words {
+    font-size: 1.1vw;
+    color: white;
+    align-self: center;
+    width: 90%;
+    font-family: "Neutraface","Helvetica","Arial",sans-serif;
+}
+.majorname {
+    font-family: "Neutraface", sans-serif;
+    color: #825ea8;
+    font-weight: 600;
+    font-size: 2vw;
+    margin: 0px;
+}
+#para1 {
+    position: relative;
+    top: -180px;
+}
+#chapsec2 {
+    display: flex;
+}
