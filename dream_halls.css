@@ -51,6 +51,8 @@ a:hover{
 }
 
 #comm-logo {
+    width: 100%;
+    height: 100%;
     max-width: 65%;
     max-height: 65%;
 }
