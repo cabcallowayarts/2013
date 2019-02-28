@@ -166,7 +166,7 @@ header {
 #calendar p {
     text-align: center;
     padding: 0px 10px;
-    max-width: 800px;
+    max-width: 850px;
 }
 
 #calendar h1 {
@@ -178,9 +178,11 @@ header {
 }
 
 #calendar iframe {
-    height: 600px;
+    height: 75vw;
+    min-height: 600px;
+    max-height: 800px;
     width: 85%;
-    max-width: 750px;
+    max-width: 1250px;
 }
 
 #cal-mobile {
