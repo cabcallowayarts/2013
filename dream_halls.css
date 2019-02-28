@@ -178,10 +178,10 @@ header {
 }
 
 #calendar iframe {
-    height: 75vw;
-    min-height: 600px;
+    height: 85vh;
+    min-height: 450px;
     max-height: 800px;
-    width: 85%;
+    width: 85vw;
     max-width: 1250px;
 }
 
@@ -268,10 +268,6 @@ footer > ul > li > a {
     }
 
     /*Calendar*/
-    #calendar iframe {
-        height: 575px;
-    }
-
     #cal-desktop {
         display: none;
     }
