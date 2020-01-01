@@ -189,6 +189,32 @@ header {
     display: none;
 }
 
+/*artwork*/
+.art-header {
+    font-size: 50px;
+    text-align: center;
+}
+
+#studentartwork {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.artwork-description {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+
 /*Footer*/
 footer {
     display: -webkit-box;
